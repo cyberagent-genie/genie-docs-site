@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-design-documents/planning-artifacts/prd-validation-report" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">PRD Validation Report | Genie Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://cyberagent-genie.github.io/genie-docs/design-documents/planning-artifacts/prd-validation-report"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="PRD Validation Report | Genie Docs"><meta data-rh="true" name="description" content="PRD Being Validated: docs/design-documents/planning-artifacts/prd.md"><meta data-rh="true" property="og:description" content="PRD Being Validated: docs/design-documents/planning-artifacts/prd.md"><link data-rh="true" rel="icon" href="/genie-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://cyberagent-genie.github.io/genie-docs/design-documents/planning-artifacts/prd-validation-report"><link data-rh="true" rel="alternate" href="https://cyberagent-genie.github.io/genie-docs/design-documents/planning-artifacts/prd-validation-report" hreflang="en"><link data-rh="true" rel="alternate" href="https://cyberagent-genie.github.io/genie-docs/design-documents/planning-artifacts/prd-validation-report" hreflang="x-default"><link rel="stylesheet" href="/genie-docs/assets/css/styles.f62513bd.css">
+<script src="/genie-docs/assets/js/runtime~main.c001c71a.js" defer="defer"></script>
+<script src="/genie-docs/assets/js/main.4367208b.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/genie-docs/"><div class="navbar__logo"><img src="/genie-docs/img/logo.svg" alt="Genie Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/genie-docs/img/logo.svg" alt="Genie Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Genie Docs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/genie-docs/">Documentation</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/cyberagent-genie/genie-system" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/genie-docs/">Home</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/genie-docs/handbook/">Handbook</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/genie-docs/design-documents/planning-artifacts/architecture/">Architecture</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/genie-docs/design-documents/planning-artifacts/architecture/">Design Documents</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/genie-docs/design-documents/planning-artifacts/architecture/">Overview</a><button aria-label="Expand sidebar category &#x27;Overview&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/genie-docs/design-documents/planning-artifacts/prd/">PRD Overview</a><button aria-label="Expand sidebar category &#x27;PRD Overview&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/genie-docs/design-documents/planning-artifacts/prd-validation-report">PRD Validation Report</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/genie-docs/design-documents/planning-artifacts/product-brief-genie-system-2026-03-12">Product Brief: genie-system</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/genie-docs/design-documents/planning-artifacts/research/domain-internal-ai-assistant-for-employees-research-2026-03-12">research</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/genie-docs/design-documents/planning-artifacts/ux-design-specification">UX Design Specification — Genie</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/genie-docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Design Documents</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">PRD Validation Report</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>PRD Validation Report</h1></header>
+<p><strong>PRD Being Validated:</strong> docs/design-documents/planning-artifacts/prd.md
+<strong>Validation Date:</strong> 2026-03-16</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="input-documents">Input Documents<a href="#input-documents" class="hash-link" aria-label="Direct link to Input Documents" title="Direct link to Input Documents">​</a></h2>
+<ul>
+<li>Product Brief: product-brief-genie-system-2026-03-12.md ✓</li>
+<li>Research (Technical Chrome Extension): technical-chrome-extension-ai-assistant-research-2026-03-12.md ✓</li>
+<li>Research (Domain Internal AI): domain-internal-ai-assistant-for-employees-research-2026-03-12.md ✓</li>
+<li>Research (Technical Trends): technical-trends-chrome-extension-ai-assistant-2026-03-12.md ✓</li>
+<li>Shared Context: docs/handbook/index.md ✓</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="validation-findings">Validation Findings<a href="#validation-findings" class="hash-link" aria-label="Direct link to Validation Findings" title="Direct link to Validation Findings">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="format-detection">Format Detection<a href="#format-detection" class="hash-link" aria-label="Direct link to Format Detection" title="Direct link to Format Detection">​</a></h2>
+<p><strong>PRD Structure (all ## Level 2 headers):</strong></p>
+<ol>
+<li>Executive Summary</li>
+<li>Success Criteria</li>
+<li>Product Scope</li>
+<li>User Journeys</li>
+<li>Domain-Specific Requirements</li>
+<li>Innovation &amp; Novel Patterns</li>
+<li>Chrome Extension Requirements</li>
+<li>Functional Requirements</li>
+<li>Non-Functional Requirements</li>
+<li>Project Scoping &amp; Build Strategy</li>
+</ol>
+<p><strong>BMAD Core Sections Present:</strong></p>
+<ul>
+<li>Executive Summary: Present ✅</li>
+<li>Success Criteria: Present ✅</li>
+<li>Product Scope: Present ✅</li>
+<li>User Journeys: Present ✅</li>
+<li>Functional Requirements: Present ✅</li>
+<li>Non-Functional Requirements: Present ✅</li>
+</ul>
+<p><strong>Format Classification:</strong> BMAD Standard
+<strong>Core Sections Present:</strong> 6/6</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="information-density-validation">Information Density Validation<a href="#information-density-validation" class="hash-link" aria-label="Direct link to Information Density Validation" title="Direct link to Information Density Validation">​</a></h2>
+<p><strong>Anti-Pattern Violations:</strong></p>
+<p><strong>Conversational Filler:</strong> 0 occurrences</p>
+<p><strong>Wordy Phrases:</strong> 0 occurrences</p>
+<p><strong>Redundant Phrases:</strong> 0 occurrences</p>
+<p><strong>Total Violations:</strong> 0</p>
+<p><strong>Severity Assessment:</strong> Pass ✅</p>
+<p><strong>Recommendation:</strong> PRD demonstrates excellent information density with zero violations. Language is direct, concise, and free of filler.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="product-brief-coverage">Product Brief Coverage<a href="#product-brief-coverage" class="hash-link" aria-label="Direct link to Product Brief Coverage" title="Direct link to Product Brief Coverage">​</a></h2>
+<p><strong>Product Brief:</strong> product-brief-genie-system-2026-03-12.md</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="coverage-map">Coverage Map<a href="#coverage-map" class="hash-link" aria-label="Direct link to Coverage Map" title="Direct link to Coverage Map">​</a></h3>
+<p><strong>Vision Statement:</strong> Partially Covered ⚠️</p>
+<ul>
+<li>PRD covers: translate, summarize, next steps, governance, streaming</li>
+<li>Gap (Moderate): Brief&#x27;s &quot;self-improving knowledge layer&quot; (user confirm/reject → system learns) is a core differentiator. PRD has FR38 (inline accept/reject feedback) but no FR for feedback improving the Confluence index or terminology database over time. The compounding institutional memory angle is present in Innovation section narratively but not as a capability requirement.</li>
+</ul>
+<p><strong>Target Users:</strong> Partially Covered ⚠️</p>
+<ul>
+<li>PRD covers: Comtor (Minh journey), Developer (Kenji journey), IT Admin (Hiroshi journey), CTO (Tanaka journey)</li>
+<li>Gap (Moderate): Brief has dedicated Hana (Office Staff) persona with detailed pain points. PRD mentions &quot;Office Staff&quot; in Success Criteria and Journey Requirements Summary table but has no dedicated User Journey narrative for this persona. Office Staff use case (processing reports without copy-pasting to external AI) lacks journey coverage comparable to the Comtor and Developer journeys.</li>
+</ul>
+<p><strong>Problem Statement:</strong> Fully Covered ✅</p>
+<ul>
+<li>Security exposure from external AI tools, workflow fragmentation, translation errors with downstream consequences all present in Executive Summary.</li>
+</ul>
+<p><strong>Key Features:</strong> Fully Covered ✅</p>
+<ul>
+<li>Context-Aware Translation (FR1, FR5, FR12-FR15), Page Summarization (FR2), Suggest Next Steps (FR3), Q&amp;A (FR4) all covered.</li>
+</ul>
+<p><strong>Goals/Objectives:</strong> Partially Covered — Intentionally ✅</p>
+<ul>
+<li>Return Rate ⭐ and Qualitative NPS present. Intentional Usage Rate from Brief is explicitly moved to &quot;v2 Analytics Backlog&quot; in PRD — intentional scoping decision, not a gap.</li>
+</ul>
+<p><strong>Differentiators:</strong> Fully Covered ✅</p>
+<ul>
+<li>In-page zero interruption, org context grounding, institutional memory, secure by design — all present in Innovation &amp; Novel Patterns section.</li>
+</ul>
+<p><strong>Out of Scope / Future Vision:</strong> Fully Covered ✅</p>
+<ul>
+<li>Brief&#x27;s deferred items (mobile, Slack/Jira, admin dashboard, personal dictionary) all present in Growth v2 and Vision v3+ sections.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="coverage-summary">Coverage Summary<a href="#coverage-summary" class="hash-link" aria-label="Direct link to Coverage Summary" title="Direct link to Coverage Summary">​</a></h3>
+<p><strong>Overall Coverage:</strong> High (~90%)
+<strong>Critical Gaps:</strong> 0
+<strong>Moderate Gaps:</strong> 2</p>
+<ol>
+<li>Self-improving knowledge layer not captured as a Functional Requirement (only as feedback collection FR38 — no requirement for the learning/improvement loop)</li>
+<li>Office Staff (Hana) persona lacks a dedicated User Journey narrative
+<strong>Informational Gaps:</strong> 0</li>
+</ol>
+<p><strong>Recommendation:</strong> PRD provides strong coverage of Product Brief content. Two moderate gaps worth addressing: (1) Add an FR for the knowledge improvement loop (feedback → terminology refinement) or explicitly document this as deferred; (2) Add a User Journey for Office Staff persona to match the coverage depth of Comtor and Developer journeys.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="measurability-validation">Measurability Validation<a href="#measurability-validation" class="hash-link" aria-label="Direct link to Measurability Validation" title="Direct link to Measurability Validation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="functional-requirements">Functional Requirements<a href="#functional-requirements" class="hash-link" aria-label="Direct link to Functional Requirements" title="Direct link to Functional Requirements">​</a></h3>
+<p><strong>Total FRs Analyzed:</strong> 44</p>
+<p><strong>Format Violations:</strong> 0</p>
+<p><strong>Subjective Adjectives Found:</strong> 0</p>
+<p><strong>Vague Quantifiers Found:</strong> 1</p>
+<ul>
+<li>FR8: &quot;context from earlier turns in the same session&quot; — conversation history depth unspecified (how many turns retained?)</li>
+</ul>
+<p><strong>Implementation Leakage:</strong> 1</p>
+<ul>
+<li>FR7: &quot;server-side conversation history scoped to SSO session ID&quot; — &quot;server-side&quot; and &quot;SSO session ID&quot; are implementation details; should read &quot;System maintains conversation history scoped to the user&#x27;s authenticated session&quot;</li>
+</ul>
+<p><strong>FR Violations Total:</strong> 2</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="non-functional-requirements">Non-Functional Requirements<a href="#non-functional-requirements" class="hash-link" aria-label="Direct link to Non-Functional Requirements" title="Direct link to Non-Functional Requirements">​</a></h3>
+<p><strong>Total NFRs Analyzed:</strong> 18</p>
+<p><strong>Missing Metrics:</strong> 1</p>
+<ul>
+<li>NFR-SC3: &quot;Stateless — horizontal scale ready&quot; — qualitative statement with no measurable criterion or test method</li>
+</ul>
+<p><strong>Incomplete Template:</strong> 2</p>
+<ul>
+<li>NFR-P2: &quot;&lt; 15s for typical translation/summarization&quot; — &quot;typical&quot; is vague; no measurement method specified (e.g., &quot;as measured under normal load conditions&quot;)</li>
+<li>NFR-P4: &quot;&lt; 1s per semantic search&quot; — no measurement method specified</li>
+</ul>
+<p><strong>Missing Context:</strong> 0</p>
+<p><strong>NFR Violations Total:</strong> 3</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overall-assessment">Overall Assessment<a href="#overall-assessment" class="hash-link" aria-label="Direct link to Overall Assessment" title="Direct link to Overall Assessment">​</a></h3>
+<p><strong>Total Requirements:</strong> 62 (44 FRs + 18 NFRs)
+<strong>Total Violations:</strong> 5</p>
+<p><strong>Severity:</strong> Warning ⚠️ (5 violations)</p>
+<p><strong>Recommendation:</strong> Requirements are generally well-formed with good measurability. Five violations need refinement: (1) FR7 implementation leakage — remove implementation details from capability statement; (2) FR8 history depth — specify retention policy (e.g., &quot;last N turns&quot; or &quot;duration of SSO session&quot;); (3) NFR-P2 — remove &quot;typical&quot; and add measurement conditions; (4) NFR-P4 — add measurement method; (5) NFR-SC3 — add measurable scalability criterion (e.g., &quot;genie-api shall handle 10x pilot load through horizontal scaling as validated by load test&quot;).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="traceability-validation">Traceability Validation<a href="#traceability-validation" class="hash-link" aria-label="Direct link to Traceability Validation" title="Direct link to Traceability Validation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="chain-validation">Chain Validation<a href="#chain-validation" class="hash-link" aria-label="Direct link to Chain Validation" title="Direct link to Chain Validation">​</a></h3>
+<p><strong>Executive Summary → Success Criteria:</strong> Intact ✅</p>
+<ul>
+<li>Vision (multilingual assistance, security, org context) aligns with all user, business, and technical success criteria.</li>
+</ul>
+<p><strong>Success Criteria → User Journeys:</strong> Gaps Identified ⚠️</p>
+<ul>
+<li>Comtor success criteria → Journey 1 &amp; 2 ✅</li>
+<li>Developer success criteria → Journey 3 ✅</li>
+<li>CTO Go/No-Go → Journey 5 ✅</li>
+<li>Office Staff success criteria (&quot;processes reports without external AI&quot;) → <strong>No dedicated User Journey</strong> — gap consistent with Product Brief coverage finding.</li>
+</ul>
+<p><strong>User Journeys → Functional Requirements:</strong> Gaps Identified ⚠️</p>
+<ul>
+<li>Journey 1 (Comtor Happy Path) → FR1, FR12, FR13, FR14, FR17 ✅</li>
+<li>Journey 2 (Comtor Edge Case) → FR15, FR20 ✅</li>
+<li>Journey 3 (Developer Search) → FR4, FR5, FR12, FR14 ✅; <strong>Recency signal</strong> (doc freshness indicator) mentioned in journey narrative — no explicit FR covers this capability.</li>
+<li>Journey 4 (IT Admin Setup) → FR11, FR23, FR28-FR31, FR39 ✅</li>
+<li>Journey 5 (CTO Review) → FR35, FR36, FR37, FR32, FR33 ✅; <strong>Data export</strong> for CTO reporting mentioned in journey — no explicit FR covers export functionality (FR32/FR33 cover logging, not export).</li>
+</ul>
+<p><strong>Scope → FR Alignment:</strong> Intact ✅</p>
+<ul>
+<li>All MVP scope items map to FRs. Deferred items appropriately scoped to Growth v2.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="orphan-elements">Orphan Elements<a href="#orphan-elements" class="hash-link" aria-label="Direct link to Orphan Elements" title="Direct link to Orphan Elements">​</a></h3>
+<p><strong>Orphan Functional Requirements:</strong> 0</p>
+<ul>
+<li>All 44 FRs trace to either a User Journey or Domain Requirements / Governance justification.</li>
+</ul>
+<p><strong>Unsupported Success Criteria:</strong> 1</p>
+<ul>
+<li>Office Staff success criterion (process reports without external AI) — no supporting User Journey narrative.</li>
+</ul>
+<p><strong>User Journeys Without Sufficient FRs:</strong> 2</p>
+<ul>
+<li>Journey 3: Recency signal / doc freshness indicator has no explicit FR</li>
+<li>Journey 5: Data export for CTO pilot review has no explicit FR</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="traceability-matrix">Traceability Matrix<a href="#traceability-matrix" class="hash-link" aria-label="Direct link to Traceability Matrix" title="Direct link to Traceability Matrix">​</a></h3>
+<table><thead><tr><th>Layer</th><th>Status</th></tr></thead><tbody><tr><td>Executive Summary → Success Criteria</td><td>✅ Intact</td></tr><tr><td>Success Criteria → User Journeys</td><td>⚠️ 1 gap (Office Staff)</td></tr><tr><td>User Journeys → FRs</td><td>⚠️ 2 gaps (recency signal, data export)</td></tr><tr><td>Scope → FR Alignment</td><td>✅ Intact</td></tr></tbody></table>
+<p><strong>Total Traceability Issues:</strong> 3</p>
+<p><strong>Severity:</strong> Warning ⚠️</p>
+<p><strong>Recommendation:</strong> Traceability chain is mostly intact with strong coverage. Three gaps to address: (1) Add Office Staff User Journey to support the success criterion already defined; (2) Add FR for document recency/freshness signal referenced in Developer journey; (3) Add FR for data export capability referenced in CTO journey — or explicitly document it as deferred to v2 with a note in Journey 5.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-leakage-validation">Implementation Leakage Validation<a href="#implementation-leakage-validation" class="hash-link" aria-label="Direct link to Implementation Leakage Validation" title="Direct link to Implementation Leakage Validation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="leakage-by-category">Leakage by Category<a href="#leakage-by-category" class="hash-link" aria-label="Direct link to Leakage by Category" title="Direct link to Leakage by Category">​</a></h3>
+<p><strong>Frontend Frameworks:</strong> 0 violations</p>
+<p><strong>Backend Frameworks:</strong> 0 violations</p>
+<p><strong>Databases:</strong> 0 violations</p>
+<p><strong>Cloud Platforms:</strong> 0 violations</p>
+<p><strong>Infrastructure:</strong> 0 violations</p>
+<p><strong>Libraries:</strong> 0 violations</p>
+<p><strong>Other Implementation Details:</strong> 4 violations</p>
+<ul>
+<li>FR7: &quot;server-side conversation history scoped to SSO session ID&quot; — &quot;server-side&quot; prescribes WHERE data is stored (implementation); &quot;SSO session ID&quot; prescribes HOW scoping is implemented. Capability statement should read: &quot;System maintains conversation history scoped to the user&#x27;s authenticated session&quot;</li>
+<li>FR42: &quot;genie-api auto-invalidates server-side sessions after an IT Admin-configurable idle timeout&quot; — &quot;server-side sessions&quot; is implementation detail. Should read: &quot;System auto-invalidates user sessions after an IT Admin-configurable idle timeout&quot;</li>
+<li>FR43: &quot;genie-api enforces model allowlist server-side&quot; — &quot;server-side&quot; specifies WHERE enforcement happens. Should read: &quot;System enforces model allowlist on every AI request regardless of request source&quot;</li>
+</ul>
+<p><strong>Note:</strong> NFR protocol references (TLS 1.2+, SAML 2.0, OIDC, REST API v2, Manifest V3) are capability-relevant compliance/integration standards — not implementation leakage.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
+<p><strong>Total Implementation Leakage Violations:</strong> 4 (all in FRs 7, 42, 43 — same &quot;server-side&quot; pattern)</p>
+<p><strong>Severity:</strong> Warning ⚠️</p>
+<p><strong>Recommendation:</strong> Leakage is minor and concentrated in three FRs with the same pattern (&quot;server-side&quot;). Remove &quot;server-side&quot; and &quot;SSO session ID&quot; terminology from FR language — these belong in the architecture document. The intended capability (session-scoped conversation history, session invalidation, server-enforced allowlist) can be expressed without implementation location details.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="domain-compliance-validation">Domain Compliance Validation<a href="#domain-compliance-validation" class="hash-link" aria-label="Direct link to Domain Compliance Validation" title="Direct link to Domain Compliance Validation">​</a></h2>
+<p><strong>Domain:</strong> enterprise_internal_tool
+<strong>Complexity:</strong> Low (general / internal productivity tool — not a regulated industry domain)
+<strong>Assessment:</strong> N/A — No mandatory regulatory compliance framework (HIPAA, PCI-DSS, FedRAMP, etc.) applies.</p>
+<p><strong>Note:</strong> PRD already includes a comprehensive &quot;Domain-Specific Requirements&quot; section covering data governance (no PII in logs, zero local storage, 30-day retention), security constraints (SSO-mandatory, API proxy, audit trail), and integration requirements. This exceeds standard expectations for a general-domain PRD and demonstrates proactive compliance thinking appropriate for an enterprise internal tool.</p>
+<p><strong>Severity:</strong> Pass ✅</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="project-type-compliance-validation">Project-Type Compliance Validation<a href="#project-type-compliance-validation" class="hash-link" aria-label="Direct link to Project-Type Compliance Validation" title="Direct link to Project-Type Compliance Validation">​</a></h2>
+<p><strong>Project Type:</strong> browser_extension + web_app (composite — Chrome Extension frontend + genie-api backend)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="required-sections-web-app-component">Required Sections (Web App Component)<a href="#required-sections-web-app-component" class="hash-link" aria-label="Direct link to Required Sections (Web App Component)" title="Direct link to Required Sections (Web App Component)">​</a></h3>
+<p><strong>Browser/Platform Matrix:</strong> Present ✅ — &quot;Chrome only — v1, Manifest V3&quot; clearly specified in Chrome Extension Requirements section.</p>
+<p><strong>Responsive Design:</strong> N/A ✅ — Sidebar via Shadow DOM covers layout isolation; internal tool not requiring multi-device responsiveness.</p>
+<p><strong>Performance Targets:</strong> Present ✅ — NFR-P1 through NFR-P5 cover streaming latency, sidebar inject time, bundle size, and Confluence query time.</p>
+<p><strong>SEO Strategy:</strong> N/A ✅ — Intentionally not applicable for an internal enterprise tool.</p>
+<p><strong>Accessibility Level:</strong> Missing ⚠️ — No WCAG target or accessibility standard specified for the sidebar UI. Enterprise tools deployed to employees still benefit from accessibility targets (particularly keyboard navigation and screen reader support).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="required-sections-api-backend-component">Required Sections (API Backend Component)<a href="#required-sections-api-backend-component" class="hash-link" aria-label="Direct link to Required Sections (API Backend Component)" title="Direct link to Required Sections (API Backend Component)">​</a></h3>
+<p><strong>Auth Model:</strong> Present ✅ — FR23-FR26 (SSO, session, re-auth) + NFR-S4 (all endpoints require valid SSO token).</p>
+<p><strong>Error Codes / States:</strong> Present ✅ — Error &amp; Offline States table in Chrome Extension Requirements section.</p>
+<p><strong>Rate Limits:</strong> Present ✅ — FR44 (per-user rate limiting on AI query endpoints).</p>
+<p><strong>API Versioning:</strong> Present ✅ — Semantic versioning contract, rollback endpoint, minimum supported version in Chrome Extension Requirements API Contract.</p>
+<p><strong>Endpoint Specs / Data Schemas:</strong> Not present — Appropriate for PRD stage; these belong in architecture documents. ✅</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="chrome-extension-specific-beyond-csv">Chrome Extension-Specific (Beyond CSV)<a href="#chrome-extension-specific-beyond-csv" class="hash-link" aria-label="Direct link to Chrome Extension-Specific (Beyond CSV)" title="Direct link to Chrome Extension-Specific (Beyond CSV)">​</a></h3>
+<p><strong>Manifest Version:</strong> V3 ✅
+<strong>Content Script Scope:</strong> <code>&lt;all_urls&gt;</code> ✅
+<strong>UI Injection Strategy:</strong> Shadow DOM ✅
+<strong>Token Storage Policy:</strong> Memory only, not localStorage ✅
+<strong>Update Management:</strong> Enterprise Policy ✅
+<strong>Communication Model:</strong> content_script ↔ background service_worker ↔ genie-api ✅</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="compliance-summary">Compliance Summary<a href="#compliance-summary" class="hash-link" aria-label="Direct link to Compliance Summary" title="Direct link to Compliance Summary">​</a></h3>
+<p><strong>Required Sections:</strong> 5/6 present (Accessibility level missing)
+<strong>Excluded Sections Violations:</strong> 0
+<strong>Compliance Score:</strong> ~92%</p>
+<p><strong>Severity:</strong> Warning ⚠️ (minor)</p>
+<p><strong>Recommendation:</strong> PRD has excellent browser extension-specific coverage. One gap: Add an accessibility target for the sidebar UI (e.g., &quot;Sidebar supports keyboard navigation and is compatible with screen readers at WCAG 2.1 AA level&quot;) or explicitly document accessibility as deferred to v2.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="smart-requirements-validation">SMART Requirements Validation<a href="#smart-requirements-validation" class="hash-link" aria-label="Direct link to SMART Requirements Validation" title="Direct link to SMART Requirements Validation">​</a></h2>
+<p><strong>Total Functional Requirements:</strong> 44</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="scoring-summary">Scoring Summary<a href="#scoring-summary" class="hash-link" aria-label="Direct link to Scoring Summary" title="Direct link to Scoring Summary">​</a></h3>
+<p><strong>All scores ≥ 3:</strong> 97.7% (43/44)
+<strong>All scores ≥ 4:</strong> 86.4% (38/44)
+<strong>Overall Average Score:</strong> 4.7/5.0</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="scoring-table">Scoring Table<a href="#scoring-table" class="hash-link" aria-label="Direct link to Scoring Table" title="Direct link to Scoring Table">​</a></h3>
+<table><thead><tr><th>FR #</th><th>Specific</th><th>Measurable</th><th>Attainable</th><th>Relevant</th><th>Traceable</th><th>Avg</th><th>Flag</th></tr></thead><tbody><tr><td>FR1</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR2</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR3</td><td>4</td><td>3</td><td>5</td><td>5</td><td>5</td><td>4.4</td><td></td></tr><tr><td>FR4</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR5</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR6</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR7</td><td>4</td><td>3</td><td>5</td><td>4</td><td>4</td><td>4.0</td><td></td></tr><tr><td>FR8</td><td>3</td><td>2</td><td>5</td><td>5</td><td>4</td><td>3.8</td><td>⚠️</td></tr><tr><td>FR9</td><td>4</td><td>4</td><td>5</td><td>4</td><td>4</td><td>4.2</td><td></td></tr><tr><td>FR10</td><td>5</td><td>4</td><td>4</td><td>5</td><td>5</td><td>4.6</td><td></td></tr><tr><td>FR11</td><td>5</td><td>4</td><td>4</td><td>5</td><td>5</td><td>4.6</td><td></td></tr><tr><td>FR12</td><td>4</td><td>3</td><td>5</td><td>5</td><td>5</td><td>4.4</td><td></td></tr><tr><td>FR13</td><td>4</td><td>3</td><td>5</td><td>5</td><td>5</td><td>4.4</td><td></td></tr><tr><td>FR14</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR15</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR16</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5.0</td><td></td></tr><tr><td>FR17</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR18</td><td>5</td><td>4</td><td>5</td><td>4</td><td>5</td><td>4.6</td><td></td></tr><tr><td>FR19</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5.0</td><td></td></tr><tr><td>FR20</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5.0</td><td></td></tr><tr><td>FR21</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR22</td><td>3</td><td>3</td><td>5</td><td>5</td><td>4</td><td>4.0</td><td></td></tr><tr><td>FR23</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR24</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR25</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR26</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5.0</td><td></td></tr><tr><td>FR27</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR28</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR29</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR30</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5.0</td><td></td></tr><tr><td>FR31</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5.0</td><td></td></tr><tr><td>FR32</td><td>4</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.6</td><td></td></tr><tr><td>FR33</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5.0</td><td></td></tr><tr><td>FR34</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5.0</td><td></td></tr><tr><td>FR35</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR36</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR37</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5.0</td><td></td></tr><tr><td>FR38</td><td>4</td><td>3</td><td>5</td><td>4</td><td>3</td><td>3.8</td><td></td></tr><tr><td>FR39</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR40</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR41</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5.0</td><td></td></tr><tr><td>FR42</td><td>4</td><td>3</td><td>5</td><td>4</td><td>4</td><td>4.0</td><td></td></tr><tr><td>FR43</td><td>5</td><td>4</td><td>5</td><td>5</td><td>5</td><td>4.8</td><td></td></tr><tr><td>FR44</td><td>4</td><td>3</td><td>5</td><td>5</td><td>5</td><td>4.4</td><td></td></tr></tbody></table>
+<p><strong>Legend:</strong> 1=Poor, 3=Acceptable, 5=Excellent | <strong>⚠️</strong> = Score &lt; 3 in one or more categories</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="improvement-suggestions">Improvement Suggestions<a href="#improvement-suggestions" class="hash-link" aria-label="Direct link to Improvement Suggestions" title="Direct link to Improvement Suggestions">​</a></h3>
+<p><strong>FR8 (flagged — M=2):</strong> &quot;User can ask follow-up questions referencing context from earlier turns in the same session&quot; — Measurable score low because &quot;earlier turns&quot; is undefined. Suggest: &quot;User can ask follow-up questions that reference any response within the current session (minimum last 10 turns retained).&quot; This makes the history depth testable.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overall-assessment-1">Overall Assessment<a href="#overall-assessment-1" class="hash-link" aria-label="Direct link to Overall Assessment" title="Direct link to Overall Assessment">​</a></h3>
+<p><strong>Severity:</strong> Pass ✅ (only 1 FR flagged = 2.3%, well below 10% threshold)</p>
+<p><strong>Recommendation:</strong> Functional Requirements are of high quality overall (average 4.7/5.0). Only FR8 has a measurability concern due to unspecified conversation history depth — already flagged in Measurability Validation (Step 5). Addressing FR8 will bring the PRD to near-perfect SMART compliance.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="holistic-quality-assessment">Holistic Quality Assessment<a href="#holistic-quality-assessment" class="hash-link" aria-label="Direct link to Holistic Quality Assessment" title="Direct link to Holistic Quality Assessment">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="document-flow--coherence">Document Flow &amp; Coherence<a href="#document-flow--coherence" class="hash-link" aria-label="Direct link to Document Flow &amp; Coherence" title="Direct link to Document Flow &amp; Coherence">​</a></h3>
+<p><strong>Assessment:</strong> Good (4/5)</p>
+<p><strong>Strengths:</strong></p>
+<ul>
+<li>Executive Summary opens with a sharp problem → solution → why now → users → rollout narrative — one of the strongest PRD openings possible</li>
+<li>User Journey narratives are genuinely compelling stories (Minh&#x27;s 15-page spec, Kenji&#x27;s 47 Confluence results) with clear capability-to-narrative mapping</li>
+<li>Flow from strategic vision → tactical requirements → technical specifics is well-paced and logical</li>
+<li>&quot;Journey Requirements Summary&quot; table elegantly bridges journeys to capabilities</li>
+</ul>
+<p><strong>Areas for Improvement:</strong></p>
+<ul>
+<li>Transition from Journey Requirements Summary → Domain-Specific Requirements is abrupt — a one-line bridging sentence would help</li>
+<li>No Office Staff journey narrative breaks the persona coverage symmetry established by the Comtor and Developer journeys</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dual-audience-effectiveness">Dual Audience Effectiveness<a href="#dual-audience-effectiveness" class="hash-link" aria-label="Direct link to Dual Audience Effectiveness" title="Direct link to Dual Audience Effectiveness">​</a></h3>
+<p><strong>For Humans:</strong></p>
+<ul>
+<li>Executive-friendly: Excellent — CTO can make deployment decisions from Executive Summary alone</li>
+<li>Developer clarity: Strong — 44 FRs, Chrome Extension architecture, API contract all documented</li>
+<li>Designer clarity: Good — Linear-inspired design language, user journeys with emotional context; accessibility targets missing</li>
+<li>Stakeholder decision-making: Strong — Risk tables, pilot go/no-go criteria, measurable KPIs</li>
+</ul>
+<p><strong>For LLMs:</strong></p>
+<ul>
+<li>Machine-readable structure: Excellent — consistent ## Level 2 headers, numbered FRs, well-structured tables, clear section boundaries</li>
+<li>UX readiness: Strong — journey narratives, error state matrix, confidence indicator behavior, onboarding flow all present</li>
+<li>Architecture readiness: Strong — communication model diagram, API contract, versioning strategy, Chrome Extension architecture, SSO requirements</li>
+<li>Epic/Story readiness: Strong — 44 FRs grouped into 8 capability areas with actor/capability format; clean foundation for epic breakdown</li>
+</ul>
+<p><strong>Dual Audience Score:</strong> 4.5/5</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bmad-prd-principles-compliance">BMAD PRD Principles Compliance<a href="#bmad-prd-principles-compliance" class="hash-link" aria-label="Direct link to BMAD PRD Principles Compliance" title="Direct link to BMAD PRD Principles Compliance">​</a></h3>
+<table><thead><tr><th>Principle</th><th>Status</th><th>Notes</th></tr></thead><tbody><tr><td>Information Density</td><td>Met ✅</td><td>0 anti-pattern violations; dense, direct language throughout</td></tr><tr><td>Measurability</td><td>Partial ⚠️</td><td>5 minor violations: FR7, FR8, NFR-P2, NFR-P4, NFR-SC3</td></tr><tr><td>Traceability</td><td>Partial ⚠️</td><td>3 gaps: Office Staff journey, recency signal FR, data export FR</td></tr><tr><td>Domain Awareness</td><td>Met ✅</td><td>Comprehensive Domain-Specific Requirements exceeds general-tool standards</td></tr><tr><td>Zero Anti-Patterns</td><td>Met ✅</td><td>0 conversational filler; 0 wordy or redundant phrases</td></tr><tr><td>Dual Audience</td><td>Met ✅</td><td>Excellent structure for both executive stakeholders and LLM consumers</td></tr><tr><td>Markdown Format</td><td>Met ✅</td><td>Consistent ## headers, tables, code blocks — no formatting issues</td></tr></tbody></table>
+<p><strong>Principles Met:</strong> 5/7 (2 partial — measurability and traceability have minor gaps only)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="overall-quality-rating">Overall Quality Rating<a href="#overall-quality-rating" class="hash-link" aria-label="Direct link to Overall Quality Rating" title="Direct link to Overall Quality Rating">​</a></h3>
+<p><strong>Rating: 4/5 — Good</strong></p>
+<p><strong>Scale:</strong></p>
+<ul>
+<li>5/5 - Excellent: Exemplary, ready for production use</li>
+<li><strong>4/5 - Good: Strong with minor improvements needed ← This PRD</strong></li>
+<li>3/5 - Adequate: Acceptable but needs refinement</li>
+<li>2/5 - Needs Work: Significant gaps or issues</li>
+<li>1/5 - Problematic: Major flaws, needs substantial revision</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="top-3-improvements">Top 3 Improvements<a href="#top-3-improvements" class="hash-link" aria-label="Direct link to Top 3 Improvements" title="Direct link to Top 3 Improvements">​</a></h3>
+<ol>
+<li>
+<p><strong>Add Office Staff User Journey narrative</strong>
+Success criterion for Office Staff exists (&quot;processes reports without external AI&quot;) but no journey narrative supports it. Adding a Journey for Hana persona (similar depth to Comtor/Developer journeys) fixes the traceability gap, gives UX/Design a concrete persona story, and validates the PRD&#x27;s claim that this is a three-persona product.</p>
+</li>
+<li>
+<p><strong>Specify conversation history depth (FR8) and add missing FRs for recency signal and data export</strong>
+Three capability gaps across User Journeys: (a) FR8 needs a bounded history depth (e.g., &quot;last 10 turns&quot; or &quot;full session&quot;); (b) Journey 3 Developer narrative references a document freshness/recency signal with no backing FR; (c) Journey 5 CTO narrative references data export with no backing FR or explicit deferral statement.</p>
+</li>
+<li>
+<p><strong>Remove &quot;server-side&quot; implementation leakage from FR7, FR42, FR43</strong>
+The same pattern appears 4 times across 3 FRs. A focused pass to express these capabilities without location implementation details (e.g., &quot;server-side&quot; → remove; &quot;SSO session ID&quot; → &quot;authenticated session&quot;) will make these FRs properly capability-focused and architecture-agnostic.</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="summary-1">Summary<a href="#summary-1" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h3>
+<p><strong>This PRD is:</strong> A high-quality, well-structured document that is immediately usable for UX design and architecture phases — requiring only targeted refinements to reach BMAD standard excellence.</p>
+<p><strong>To make it great:</strong> Focus on the top 3 improvements above — all are additive or editorial, none require structural changes.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="completeness-validation">Completeness Validation<a href="#completeness-validation" class="hash-link" aria-label="Direct link to Completeness Validation" title="Direct link to Completeness Validation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="template-completeness">Template Completeness<a href="#template-completeness" class="hash-link" aria-label="Direct link to Template Completeness" title="Direct link to Template Completeness">​</a></h3>
+<p><strong>Template Variables Found:</strong> 0 ✅ — No template variables remaining. PRD is a completed document.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="content-completeness-by-section">Content Completeness by Section<a href="#content-completeness-by-section" class="hash-link" aria-label="Direct link to Content Completeness by Section" title="Direct link to Content Completeness by Section">​</a></h3>
+<p><strong>Executive Summary:</strong> Complete ✅ — Vision, problem, solution, differentiator, target users, rollout plan all present.</p>
+<p><strong>Success Criteria:</strong> Complete ✅ — User success, business success, technical success, and KPIs with measurement methods all defined.</p>
+<p><strong>Product Scope:</strong> Complete ✅ — MVP, Growth v2, Vision v3+, and explicitly deferred items all present.</p>
+<p><strong>User Journeys:</strong> Partial ⚠️ — 5 journeys cover Comtor (Happy Path + Edge Case), Developer, IT Admin, CTO. Office Staff persona (Hana) referenced in Success Criteria and Journey Summary table but has no dedicated journey narrative.</p>
+<p><strong>Functional Requirements:</strong> Complete ✅ — 44 FRs across 8 capability areas. Capability contract explicitly stated (&quot;Features not listed here do not exist in v1&quot;).</p>
+<p><strong>Non-Functional Requirements:</strong> Complete ✅ — 18 NFRs across Performance, Security, Scalability, Integration categories with specific criteria.</p>
+<p><strong>Domain-Specific Requirements:</strong> Complete ✅ — Compliance, Technical Constraints, Integration Requirements, Risk Mitigations all present.</p>
+<p><strong>Chrome Extension Requirements:</strong> Complete ✅ — Architecture, Platform Requirements, Error States, API Contract all documented.</p>
+<p><strong>Innovation &amp; Novel Patterns:</strong> Complete ✅ — Innovation areas, competitive landscape, validation approach, innovation risks.</p>
+<p><strong>Project Scoping &amp; Build Strategy:</strong> Complete ✅ — MVP philosophy and risk mitigation strategy present.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="section-specific-completeness">Section-Specific Completeness<a href="#section-specific-completeness" class="hash-link" aria-label="Direct link to Section-Specific Completeness" title="Direct link to Section-Specific Completeness">​</a></h3>
+<p><strong>Success Criteria Measurability:</strong> Most measurable ✅ — KPIs include measurement methods (weekly cohort retention, session events, in-app survey). Technical targets quantified.</p>
+<p><strong>User Journeys Coverage:</strong> Partial ⚠️ — 4 of 5 personas covered with narrative depth. Office Staff (Hana) missing journey narrative despite success criterion existing.</p>
+<p><strong>FRs Cover MVP Scope:</strong> Yes ✅ — All MVP scope items (Context-Aware Translation, Summarization, Next Steps, SSO, Confluence integration, streaming, conversation history, 3 KPIs) have supporting FRs.</p>
+<p><strong>NFRs Have Specific Criteria:</strong> Most ✅ — 15/18 NFRs fully specified. 3 NFRs partially specified: NFR-P2 (&quot;typical&quot; qualifier), NFR-P4 (missing measurement method), NFR-SC3 (qualitative only).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="frontmatter-completeness">Frontmatter Completeness<a href="#frontmatter-completeness" class="hash-link" aria-label="Direct link to Frontmatter Completeness" title="Direct link to Frontmatter Completeness">​</a></h3>
+<p><strong>stepsCompleted:</strong> Present ✅ (11 steps listed)
+<strong>classification:</strong> Present ✅ (domain, projectType, complexity, projectContext)
+<strong>inputDocuments:</strong> Present ✅ (5 documents tracked)
+<strong>workflowType/briefCount/researchCount:</strong> Present ✅</p>
+<p><strong>Frontmatter Completeness:</strong> 4/4 ✅</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="completeness-summary">Completeness Summary<a href="#completeness-summary" class="hash-link" aria-label="Direct link to Completeness Summary" title="Direct link to Completeness Summary">​</a></h3>
+<p><strong>Overall Completeness:</strong> ~95% (9.5/10 sections complete)</p>
+<p><strong>Critical Gaps:</strong> 0
+<strong>Minor Gaps:</strong> 2</p>
+<ol>
+<li>User Journeys section: Office Staff (Hana) journey narrative missing</li>
+<li>NFRs: 3 partially-specified requirements (NFR-P2, NFR-P4, NFR-SC3)</li>
+</ol>
+<p><strong>Severity:</strong> Warning ⚠️ (minor gaps only — no template variables, no critical sections missing)</p>
+<p><strong>Recommendation:</strong> PRD is substantially complete and ready for downstream use. Two minor completeness items: (1) Add Office Staff User Journey; (2) Complete specification for NFR-P2, NFR-P4, and NFR-SC3. Both items are small additions, not structural changes.</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/genie-docs/design-documents/planning-artifacts/prd/user-journeys"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">User Journeys</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/genie-docs/design-documents/planning-artifacts/product-brief-genie-system-2026-03-12"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Product Brief: genie-system</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#input-documents" class="table-of-contents__link toc-highlight">Input Documents</a></li><li><a href="#validation-findings" class="table-of-contents__link toc-highlight">Validation Findings</a></li><li><a href="#format-detection" class="table-of-contents__link toc-highlight">Format Detection</a></li><li><a href="#information-density-validation" class="table-of-contents__link toc-highlight">Information Density Validation</a></li><li><a href="#product-brief-coverage" class="table-of-contents__link toc-highlight">Product Brief Coverage</a><ul><li><a href="#coverage-map" class="table-of-contents__link toc-highlight">Coverage Map</a></li><li><a href="#coverage-summary" class="table-of-contents__link toc-highlight">Coverage Summary</a></li></ul></li><li><a href="#measurability-validation" class="table-of-contents__link toc-highlight">Measurability Validation</a><ul><li><a href="#functional-requirements" class="table-of-contents__link toc-highlight">Functional Requirements</a></li><li><a href="#non-functional-requirements" class="table-of-contents__link toc-highlight">Non-Functional Requirements</a></li><li><a href="#overall-assessment" class="table-of-contents__link toc-highlight">Overall Assessment</a></li></ul></li><li><a href="#traceability-validation" class="table-of-contents__link toc-highlight">Traceability Validation</a><ul><li><a href="#chain-validation" class="table-of-contents__link toc-highlight">Chain Validation</a></li><li><a href="#orphan-elements" class="table-of-contents__link toc-highlight">Orphan Elements</a></li><li><a href="#traceability-matrix" class="table-of-contents__link toc-highlight">Traceability Matrix</a></li></ul></li><li><a href="#implementation-leakage-validation" class="table-of-contents__link toc-highlight">Implementation Leakage Validation</a><ul><li><a href="#leakage-by-category" class="table-of-contents__link toc-highlight">Leakage by Category</a></li><li><a href="#summary" class="table-of-contents__link toc-highlight">Summary</a></li></ul></li><li><a href="#domain-compliance-validation" class="table-of-contents__link toc-highlight">Domain Compliance Validation</a></li><li><a href="#project-type-compliance-validation" class="table-of-contents__link toc-highlight">Project-Type Compliance Validation</a><ul><li><a href="#required-sections-web-app-component" class="table-of-contents__link toc-highlight">Required Sections (Web App Component)</a></li><li><a href="#required-sections-api-backend-component" class="table-of-contents__link toc-highlight">Required Sections (API Backend Component)</a></li><li><a href="#chrome-extension-specific-beyond-csv" class="table-of-contents__link toc-highlight">Chrome Extension-Specific (Beyond CSV)</a></li><li><a href="#compliance-summary" class="table-of-contents__link toc-highlight">Compliance Summary</a></li></ul></li><li><a href="#smart-requirements-validation" class="table-of-contents__link toc-highlight">SMART Requirements Validation</a><ul><li><a href="#scoring-summary" class="table-of-contents__link toc-highlight">Scoring Summary</a></li><li><a href="#scoring-table" class="table-of-contents__link toc-highlight">Scoring Table</a></li><li><a href="#improvement-suggestions" class="table-of-contents__link toc-highlight">Improvement Suggestions</a></li><li><a href="#overall-assessment-1" class="table-of-contents__link toc-highlight">Overall Assessment</a></li></ul></li><li><a href="#holistic-quality-assessment" class="table-of-contents__link toc-highlight">Holistic Quality Assessment</a><ul><li><a href="#document-flow--coherence" class="table-of-contents__link toc-highlight">Document Flow &amp; Coherence</a></li><li><a href="#dual-audience-effectiveness" class="table-of-contents__link toc-highlight">Dual Audience Effectiveness</a></li><li><a href="#bmad-prd-principles-compliance" class="table-of-contents__link toc-highlight">BMAD PRD Principles Compliance</a></li><li><a href="#overall-quality-rating" class="table-of-contents__link toc-highlight">Overall Quality Rating</a></li><li><a href="#top-3-improvements" class="table-of-contents__link toc-highlight">Top 3 Improvements</a></li><li><a href="#summary-1" class="table-of-contents__link toc-highlight">Summary</a></li></ul></li><li><a href="#completeness-validation" class="table-of-contents__link toc-highlight">Completeness Validation</a><ul><li><a href="#template-completeness" class="table-of-contents__link toc-highlight">Template Completeness</a></li><li><a href="#content-completeness-by-section" class="table-of-contents__link toc-highlight">Content Completeness by Section</a></li><li><a href="#section-specific-completeness" class="table-of-contents__link toc-highlight">Section-Specific Completeness</a></li><li><a href="#frontmatter-completeness" class="table-of-contents__link toc-highlight">Frontmatter Completeness</a></li><li><a href="#completeness-summary" class="table-of-contents__link toc-highlight">Completeness Summary</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/genie-docs/design-documents/planning-artifacts/architecture/">Architecture</a></li><li class="footer__item"><a class="footer__link-item" href="/genie-docs/handbook/">Handbook</a></li></ul></div><div class="col footer__col"><div class="footer__title">Repositories</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/cyberagent-genie/genie-system" target="_blank" rel="noopener noreferrer" class="footer__link-item">genie-system<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/cyberagent-genie/genie-api" target="_blank" rel="noopener noreferrer" class="footer__link-item">genie-api<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/cyberagent-genie/genie-chrome-extension" target="_blank" rel="noopener noreferrer" class="footer__link-item">genie-chrome-extension<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 CyberAgent Genie. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

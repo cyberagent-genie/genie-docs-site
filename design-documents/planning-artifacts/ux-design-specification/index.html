@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-design-documents/planning-artifacts/ux-design-specification" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">UX Design Specification — Genie | Genie Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://cyberagent-genie.github.io/genie-docs/design-documents/planning-artifacts/ux-design-specification"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="UX Design Specification — Genie | Genie Docs"><meta data-rh="true" name="description" content="Author: Teddy"><meta data-rh="true" property="og:description" content="Author: Teddy"><link data-rh="true" rel="icon" href="/genie-docs/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://cyberagent-genie.github.io/genie-docs/design-documents/planning-artifacts/ux-design-specification"><link data-rh="true" rel="alternate" href="https://cyberagent-genie.github.io/genie-docs/design-documents/planning-artifacts/ux-design-specification" hreflang="en"><link data-rh="true" rel="alternate" href="https://cyberagent-genie.github.io/genie-docs/design-documents/planning-artifacts/ux-design-specification" hreflang="x-default"><link rel="stylesheet" href="/genie-docs/assets/css/styles.f62513bd.css">
+<script src="/genie-docs/assets/js/runtime~main.c001c71a.js" defer="defer"></script>
+<script src="/genie-docs/assets/js/main.4367208b.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/genie-docs/"><div class="navbar__logo"><img src="/genie-docs/img/logo.svg" alt="Genie Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/genie-docs/img/logo.svg" alt="Genie Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Genie Docs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/genie-docs/">Documentation</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/cyberagent-genie/genie-system" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/genie-docs/">Home</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/genie-docs/handbook/">Handbook</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/genie-docs/design-documents/planning-artifacts/architecture/">Architecture</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/genie-docs/design-documents/planning-artifacts/architecture/">Design Documents</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/genie-docs/design-documents/planning-artifacts/architecture/">Overview</a><button aria-label="Expand sidebar category &#x27;Overview&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/genie-docs/design-documents/planning-artifacts/prd/">PRD Overview</a><button aria-label="Expand sidebar category &#x27;PRD Overview&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/genie-docs/design-documents/planning-artifacts/prd-validation-report">PRD Validation Report</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/genie-docs/design-documents/planning-artifacts/product-brief-genie-system-2026-03-12">Product Brief: genie-system</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/genie-docs/design-documents/planning-artifacts/research/domain-internal-ai-assistant-for-employees-research-2026-03-12">research</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/genie-docs/design-documents/planning-artifacts/ux-design-specification">UX Design Specification — Genie</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/genie-docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Design Documents</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">UX Design Specification — Genie</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>UX Design Specification — Genie</h1></header>
+<p><strong>Author:</strong> Teddy
+<strong>Date:</strong> 2026-03-16</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="executive-summary">Executive Summary<a href="#executive-summary" class="hash-link" aria-label="Direct link to Executive Summary" title="Direct link to Executive Summary">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="project-vision">Project Vision<a href="#project-vision" class="hash-link" aria-label="Direct link to Project Vision" title="Direct link to Project Vision">​</a></h3>
+<p>Genie là AI-powered Chrome Extension đưa AI assistance trực tiếp vào browser workflow của CyberAgent employees — không cần rời khỏi trang đang đọc. Mọi AI request được proxy qua <code>genie-api</code> nội bộ, đảm bảo data không rời CyberAgent infrastructure. Design language: Linear-inspired — dark, minimal, fast, polished.</p>
+<p>Core design philosophy: <strong>confidence-first</strong>, không phải speed-first. Genie giải quyết anxiety của người dùng trước, tốc độ là hệ quả tự nhiên — không phải mục tiêu chính.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="target-users">Target Users<a href="#target-users" class="hash-link" aria-label="Direct link to Target Users" title="Direct link to Target Users">​</a></h3>
+<p><strong>Linh / Comtor (Primary):</strong> Dịch technical spec JP↔VI/EN. Core fear: submit sai mà không biết. Emotional core — cô ấy không sợ chậm, cô ấy sợ <strong>bị sai</strong>. Cần confidence + source citation để dám submit — Genie giải quyết anxiety, không chỉ tốc độ.</p>
+<p><strong>Minh / Developer:</strong> Tìm thông tin trong Confluence docs dài. Skeptical với AI — chỉ trust nếu có citation cụ thể từ nguồn. Trust requirement: &quot;Thông tin này từ [System Architecture v2, mục 4.3]&quot; mới đủ để hành động.</p>
+<p><strong>Hana / Office Staff:</strong> Xử lý báo cáo và announcements đa ngôn ngữ. Hiện dùng ChatGPT như workaround hàng ngày — biết là rủi ro nhưng không có lựa chọn. Cần tốc độ và không rời trang.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-design-challenges">Key Design Challenges<a href="#key-design-challenges" class="hash-link" aria-label="Direct link to Key Design Challenges" title="Direct link to Key Design Challenges">​</a></h3>
+<ol>
+<li><strong>Trust UI</strong> — Confidence indicator + source citation phải cực kỳ rõ ràng để Comtor và Developer dám tin vào output và hành động ngay. Đây là centerpiece của toàn bộ UI, không phải feature phụ.</li>
+<li><strong>Non-intrusive sidebar injection</strong> — Sidebar phải hoạt động trên bất kỳ trang nào (Shadow DOM) mà không phá vỡ layout của host page — đặc biệt Confluence, Slack, Jira.</li>
+<li><strong>Progressive disclosure cho 3 personas</strong> — Một UI, ba levels of depth: default view đủ simple cho Hana, expand để thấy citation detail cho Minh, confidence indicator luôn visible cho Linh.</li>
+<li><strong>Feedback loop UX</strong> — v1 bao gồm inline accept/reject feedback (FR38). Interaction design cho feedback phải đủ lightweight để không interrupt workflow nhưng đủ explicit để capture useful signal cho knowledge layer.</li>
+<li><strong>Graceful degradation UX</strong> — Khi không có Confluence context hoặc offline, UX phải communicate rõ ràng — không silently degrade.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="design-opportunities">Design Opportunities<a href="#design-opportunities" class="hash-link" aria-label="Direct link to Design Opportunities" title="Direct link to Design Opportunities">​</a></h3>
+<ol>
+<li><strong>Confidence as visual signature</strong> — Confidence indicator ●●●●○ có thể trở thành visual identity của Genie — unique, memorable, và trực tiếp giải quyết Comtor&#x27;s core anxiety. Không AI tool nào đang làm điều này tốt.</li>
+<li><strong>Contextual text-selection trigger</strong> — Genie có thể gently suggest &quot;Translate?&quot; ngay tại điểm selection — zero friction path to first value, không cần user mở sidebar trước.</li>
+<li><strong>Engineered aha moment</strong> — Onboarding flow thiết kế để deliver aha moment ngay lần đầu: select text → translate → thấy Confluence citation → trust established.</li>
+<li><strong>&quot;AI đọc cùng bạn&quot; positioning</strong> — Genie không chờ user hỏi, Genie nhìn những gì user đang đọc và proactively surfaces insights. Mental model này không thể bị ChatGPT copy vì họ không biết user đang đọc gì — đây là true differentiation.</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="core-user-experience">Core User Experience<a href="#core-user-experience" class="hash-link" aria-label="Direct link to Core User Experience" title="Direct link to Core User Experience">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="defining-experience">Defining Experience<a href="#defining-experience" class="hash-link" aria-label="Direct link to Defining Experience" title="Direct link to Defining Experience">​</a></h3>
+<p>Core loop của Genie: <strong>Select text → Get grounded answer with confidence signal</strong>.
+Interaction này xảy ra hàng chục lần mỗi ngày với primary persona (Comtor).
+Mọi UX decision đều phục vụ việc làm core loop này nhanh, trustworthy, và effortless.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="platform-strategy">Platform Strategy<a href="#platform-strategy" class="hash-link" aria-label="Direct link to Platform Strategy" title="Direct link to Platform Strategy">​</a></h3>
+<ul>
+<li><strong>Platform:</strong> Chrome Extension (Manifest V3), Shadow DOM sidebar — desktop only, v1</li>
+<li><strong>Input modality:</strong> Mouse/keyboard primary; text selection là entry point chính</li>
+<li><strong>Always-on presence:</strong> Extension available trên mọi trang; sidebar toggle on demand</li>
+<li><strong>Offline handling:</strong> Graceful degradation — sidebar visible nhưng actions disabled kèm status message rõ ràng</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="effortless-interactions">Effortless Interactions<a href="#effortless-interactions" class="hash-link" aria-label="Direct link to Effortless Interactions" title="Direct link to Effortless Interactions">​</a></h3>
+<ul>
+<li>Text selection tự động trigger contextual action tooltip — zero steps to first action</li>
+<li>1-click to translate/summarize từ tooltip hoặc sidebar</li>
+<li>Confidence indicator readable ngay lập tức — không cần tooltip hay decode</li>
+<li>Source citation dẫn thẳng đến Confluence page trong 1 click</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="critical-success-moments">Critical Success Moments<a href="#critical-success-moments" class="hash-link" aria-label="Direct link to Critical Success Moments" title="Direct link to Critical Success Moments">​</a></h3>
+<ol>
+<li><strong>First Confluence citation</strong> — Response đầu tiên có citation = aha moment = trust established</li>
+<li><strong>Low-confidence warning comprehension</strong> — ●○○○○ phải được đọc đúng và hành động đúng ngay lần đầu</li>
+<li><strong>Guided first-use</strong> — Onboarding flow engineering để deliver first value trong &lt; 2 phút</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="experience-principles">Experience Principles<a href="#experience-principles" class="hash-link" aria-label="Direct link to Experience Principles" title="Direct link to Experience Principles">​</a></h3>
+<ol>
+<li><strong>Confidence first</strong> — Mọi AI response phải có tín hiệu tin cậy rõ ràng trước khi user đọc nội dung</li>
+<li><strong>Zero-step entry</strong> — Text selection là đủ để trigger Genie — không cần mở sidebar, không cần extra click</li>
+<li><strong>Progressive depth</strong> — Default view đơn giản cho Hana; expand để thấy citation detail cho Minh; confidence always-visible cho Linh</li>
+<li><strong>Honest uncertainty</strong> — Khi không có context, Genie nói thẳng và suggest verification — không hallucinate với vẻ confident</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="desired-emotional-response">Desired Emotional Response<a href="#desired-emotional-response" class="hash-link" aria-label="Direct link to Desired Emotional Response" title="Direct link to Desired Emotional Response">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="primary-emotional-goals">Primary Emotional Goals<a href="#primary-emotional-goals" class="hash-link" aria-label="Direct link to Primary Emotional Goals" title="Direct link to Primary Emotional Goals">​</a></h3>
+<p><strong>Primary:</strong> Calm confidence — &quot;Tôi biết mình đúng và không cần ai xác nhận lại.&quot;
+Genie không thiết kế để gây excitement hay delight. Target user đang lo lắng —
+Genie giải quyết anxiety trước, speed là hệ quả tự nhiên.</p>
+<p><strong>Secondary:</strong> Relief — cảm giác &quot;vấn đề đã được giải quyết, tôi có thể tiếp tục.&quot;</p>
+<p><strong>For Developer persona:</strong> Trust — &quot;Thông tin này đến từ nguồn thật, tôi có thể hành động.&quot;</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="emotional-journey-mapping">Emotional Journey Mapping<a href="#emotional-journey-mapping" class="hash-link" aria-label="Direct link to Emotional Journey Mapping" title="Direct link to Emotional Journey Mapping">​</a></h3>
+<table><thead><tr><th>Stage</th><th>Current emotion (without Genie)</th><th>Target emotion (with Genie)</th></tr></thead><tbody><tr><td>Encountering unfamiliar term</td><td>Anxious, uncertain</td><td>Curious — &quot;Genie will explain&quot;</td></tr><tr><td>Waiting for response</td><td>Tense (is this correct?)</td><td>Trusting — streaming shows progress</td></tr><tr><td>Reading confidence indicator</td><td>N/A</td><td>Reassured (high) or Warned (low) — clear signal</td></tr><tr><td>Reading citation</td><td>N/A</td><td>Trust established — &quot;real source exists&quot;</td></tr><tr><td>Submitting work</td><td>Fearful of being wrong</td><td><strong>Calm confidence — safe to submit</strong></td></tr><tr><td>Offline / error state</td><td>Frustrated, stuck</td><td>Informed — knows status, not confused</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="micro-emotions">Micro-Emotions<a href="#micro-emotions" class="hash-link" aria-label="Direct link to Micro-Emotions" title="Direct link to Micro-Emotions">​</a></h3>
+<ul>
+<li><strong>Confidence over Speed</strong> — users want to be <em>certain</em>, not just <em>fast</em></li>
+<li><strong>Trust over Delight</strong> — Minh (Developer) needs to <em>trust</em> before he <em>likes</em></li>
+<li><strong>Informed over Frustrated</strong> — when errors occur, users must know <em>why</em> and <em>what next</em></li>
+</ul>
+<p><strong>Emotions to actively avoid:</strong></p>
+<ul>
+<li><strong>False confidence</strong> — Genie appearing confident when context is weak → most dangerous failure mode</li>
+<li><strong>Surprise confusion</strong> — UI behaving unexpectedly on unfamiliar pages</li>
+<li><strong>Abandonment anxiety</strong> — feeling stuck when genie-api is offline</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="design-implications">Design Implications<a href="#design-implications" class="hash-link" aria-label="Direct link to Design Implications" title="Direct link to Design Implications">​</a></h3>
+<ul>
+<li><strong>Calm confidence</strong> → Confidence indicator is always visible, never hidden. Uses calm visual language (dots, not alarming colors) that communicates gradation.</li>
+<li><strong>Trust</strong> → Source citations are first-class UI elements, not collapsed/secondary. Developer must see citation <em>before</em> reading the answer.</li>
+<li><strong>Informed uncertainty</strong> → Low-confidence state is a distinct, explicit UI mode with clear explanation and actionable next step — not just greyed-out text.</li>
+<li><strong>Informed error</strong> → Offline/error states show friendly, specific messages with retry — never blank or crashed UI.</li>
+<li><strong>Calm during wait</strong> → Streaming response (visible progress) prevents anxiety during the 2s response window.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="emotional-design-principles">Emotional Design Principles<a href="#emotional-design-principles" class="hash-link" aria-label="Direct link to Emotional Design Principles" title="Direct link to Emotional Design Principles">​</a></h3>
+<ol>
+<li><strong>Anxiety reduction over delight</strong> — every design decision should first ask: does this reduce user anxiety?</li>
+<li><strong>Honest signals, always visible</strong> — confidence and source are never hidden or secondary; they are the response</li>
+<li><strong>Graceful honesty</strong> — when Genie doesn&#x27;t know, it says so clearly and kindly — never pretends</li>
+<li><strong>Predictable presence</strong> — sidebar appears and behaves consistently on every page; no surprises</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ux-pattern-analysis--inspiration">UX Pattern Analysis &amp; Inspiration<a href="#ux-pattern-analysis--inspiration" class="hash-link" aria-label="Direct link to UX Pattern Analysis &amp; Inspiration" title="Direct link to UX Pattern Analysis &amp; Inspiration">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="inspiring-products-analysis">Inspiring Products Analysis<a href="#inspiring-products-analysis" class="hash-link" aria-label="Direct link to Inspiring Products Analysis" title="Direct link to Inspiring Products Analysis">​</a></h3>
+<p><strong>Linear</strong> (design language reference): Dark minimal, generous spacing, every element has purpose.
+Cmd+K command palette as zero-friction entry point. Monochrome with accent only for attention.</p>
+<p><strong>Raycast</strong> (overlay paradigm): Contextual UI within current page, no flow interruption.
+Selection-triggered action overlay — suggest actions at the point of selection, not requiring
+sidebar scroll. Progressive result streaming.</p>
+<p><strong>Perplexity AI</strong> (AI + citations): Inline citations [1][2] embedded in response text, not footer.
+Sources visible <em>while reading</em>, not requiring scroll to verify. Source count as confidence proxy.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="transferable-ux-patterns">Transferable UX Patterns<a href="#transferable-ux-patterns" class="hash-link" aria-label="Direct link to Transferable UX Patterns" title="Direct link to Transferable UX Patterns">​</a></h3>
+<p><strong>Entry Patterns:</strong></p>
+<ul>
+<li>Cmd+K keyboard shortcut to open/focus sidebar — zero-friction, no mouse required</li>
+<li>Selection tooltip — mini action menu near selected text before full sidebar open</li>
+</ul>
+<p><strong>Response Patterns:</strong></p>
+<ul>
+<li>Inline citations [1][2] within response text — first-class elements, not collapsed list</li>
+<li>Streaming token-by-token — visible progress prevents &quot;broken&quot; perception during 2s wait</li>
+<li>Source count summary (&quot;3 internal sources&quot;) displayed before response body</li>
+</ul>
+<p><strong>Confidence Patterns:</strong></p>
+<ul>
+<li>Dot indicator ●●●●○ — readable instantly, no decoding required; calm visual language</li>
+<li>Distinct low-confidence UI mode with explicit message and actionable next step</li>
+</ul>
+<p><strong>State Patterns:</strong></p>
+<ul>
+<li>Inline status banner (top of sidebar) for offline/error — does not takeover; shows context</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="anti-patterns-to-avoid">Anti-Patterns to Avoid<a href="#anti-patterns-to-avoid" class="hash-link" aria-label="Direct link to Anti-Patterns to Avoid" title="Direct link to Anti-Patterns to Avoid">​</a></h3>
+<ul>
+<li><strong>Modal dialogs</strong> — full-page interruption destroys in-page workflow</li>
+<li><strong>Hidden confidence</strong> — confidence in tooltips only = not serving its purpose; must always be visible</li>
+<li><strong>Collapsed citations by default</strong> — &quot;See sources ▾&quot; requires extra click Minh won&#x27;t take → no trust</li>
+<li><strong>No visible streaming</strong> — blank screen for 2+ seconds feels broken even if response is coming</li>
+<li><strong>Generic error messages</strong> — &quot;Something went wrong&quot; insufficient; must specify: server vs Confluence vs auth</li>
+<li><strong>Extension badge notifications</strong> — distracting in enterprise context; Genie is passive until triggered</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="design-inspiration-strategy">Design Inspiration Strategy<a href="#design-inspiration-strategy" class="hash-link" aria-label="Direct link to Design Inspiration Strategy" title="Direct link to Design Inspiration Strategy">​</a></h3>
+<p><strong>Adopt directly:</strong></p>
+<ul>
+<li>Linear&#x27;s visual language: dark, minimal, monochrome base, accent for attention only</li>
+<li>Perplexity&#x27;s inline citation pattern: [1][2] in-text, visible without interaction</li>
+<li>Raycast&#x27;s selection overlay: contextual mini-menu at selection point</li>
+</ul>
+<p><strong>Adapt for Genie:</strong></p>
+<ul>
+<li>Raycast&#x27;s progressive streaming → adapt with Confluence source count header before response body</li>
+<li>Perplexity&#x27;s source list → simplify to Confluence page title + section link (internal only)</li>
+</ul>
+<p><strong>Genie-original (do not copy from anywhere):</strong></p>
+<ul>
+<li>●●●●○ confidence dot indicator as primary trust signal — this is Genie&#x27;s visual signature</li>
+<li>Explicit low-confidence mode with &quot;Không tìm thấy context nội bộ&quot; message and verification CTA</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="design-system-foundation">Design System Foundation<a href="#design-system-foundation" class="hash-link" aria-label="Direct link to Design System Foundation" title="Direct link to Design System Foundation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="design-system-choice">Design System Choice<a href="#design-system-choice" class="hash-link" aria-label="Direct link to Design System Choice" title="Direct link to Design System Choice">​</a></h3>
+<p><strong>Selected:</strong> Tailwind CSS + shadcn/ui (Themeable System approach)</p>
+<p><strong>Theme direction:</strong> Linear-inspired — dark background (#0a0a0a range), minimal color palette,
+monochrome base with single accent color for interactive elements.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="rationale-for-selection">Rationale for Selection<a href="#rationale-for-selection" class="hash-link" aria-label="Direct link to Rationale for Selection" title="Direct link to Rationale for Selection">​</a></h3>
+<ol>
+<li><strong>Shadow DOM compatible</strong> — Tailwind utility classes inject cleanly into Shadow DOM without
+CSS bleeding to/from host page; shadcn/ui components are owned code, not external package</li>
+<li><strong>Linear aesthetic achievable</strong> — shadcn/ui dark theme + Tailwind customization reaches
+Linear-level visual quality without building component library from scratch</li>
+<li><strong>AI-agent optimized</strong> — shadcn/ui is code you own; AI coding agents can read, modify,
+and extend components directly — no black-box library</li>
+<li><strong>Polished defaults</strong> — animation, accessibility, keyboard navigation built into components;
+solo developer does not implement these manually</li>
+<li><strong>Custom component flexibility</strong> — confidence indicator dots (●●●●○), selection tooltip,
+inline citation markers are fully custom; shadcn/ui does not constrain these</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-approach">Implementation Approach<a href="#implementation-approach" class="hash-link" aria-label="Direct link to Implementation Approach" title="Direct link to Implementation Approach">​</a></h3>
+<ul>
+<li><strong>Base:</strong> shadcn/ui component set as starting point (Button, Input, Tooltip, Scroll Area, Badge)</li>
+<li><strong>Theme:</strong> Custom Tailwind config with Linear-inspired color tokens</li>
+<li><strong>Shadow DOM injection:</strong> Tailwind CSS built and injected via content_script into Shadow DOM</li>
+<li><strong>Custom components:</strong> Confidence indicator, selection tooltip, citation marker — built
+from scratch using Tailwind primitives, not adapted from library</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="customization-strategy">Customization Strategy<a href="#customization-strategy" class="hash-link" aria-label="Direct link to Customization Strategy" title="Direct link to Customization Strategy">​</a></h3>
+<p><strong>Design tokens to define:</strong></p>
+<ul>
+<li>Background: near-black (#0d0d0d sidebar, #111 response area)</li>
+<li>Text: primary white (#f5f5f5), secondary muted (#888)</li>
+<li>Accent: single brand color for interactive elements (TBD — blue or violet range)</li>
+<li>Confidence dots: filled (●) vs empty (○) using accent and muted colors</li>
+<li>Border: subtle (#222) — separates sections without visual weight</li>
+</ul>
+<p><strong>Components to adopt from shadcn/ui:</strong> Button, Input, ScrollArea, Tooltip, Badge, Separator</p>
+<p><strong>Components to build custom:</strong> ConfidenceIndicator, SelectionTooltip, CitationMarker,
+StreamingResponse, OfflineBanner, OnboardingOverlay</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="defining-core-experience">Defining Core Experience<a href="#defining-core-experience" class="hash-link" aria-label="Direct link to Defining Core Experience" title="Direct link to Defining Core Experience">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="defining-experience-1">Defining Experience<a href="#defining-experience-1" class="hash-link" aria-label="Direct link to Defining Experience" title="Direct link to Defining Experience">​</a></h3>
+<p><strong>&quot;Highlight to understand&quot;</strong> — select bất kỳ text nào, nhận ngay context từ
+trong tổ chức của bạn, với tín hiệu tin cậy rõ ràng.</p>
+<p>Core loop: <strong>text selection → SelectionTooltip → action → confidence-first response</strong></p>
+<p>If we nail this single interaction, everything else follows.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="user-mental-model">User Mental Model<a href="#user-mental-model" class="hash-link" aria-label="Direct link to User Mental Model" title="Direct link to User Mental Model">​</a></h3>
+<p><strong>Current behavior:</strong> Copy → new tab → paste to ChatGPT → read → return → apply.
+5-6 steps, full context switch, security anxiety.</p>
+<p><strong>Mental model users bring:</strong> &quot;Copy-paste to AI tool&quot; — they hate it but know how.
+Genie meets them there, then eliminates the context switch entirely.</p>
+<p><strong>What Genie breaks (positively):</strong> AI always sounds confident. Genie tells the truth
+about confidence level — users learn this is a feature, not a limitation.</p>
+<p><strong>Familiar anchors for novel patterns:</strong></p>
+<ul>
+<li>Confidence dots ≈ mobile signal bars — more = better, instantly understood</li>
+<li>Low-confidence mode ≈ &quot;draft&quot; indicator — Genie gives you a working draft, flag to verify</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="success-criteria">Success Criteria<a href="#success-criteria" class="hash-link" aria-label="Direct link to Success Criteria" title="Direct link to Success Criteria">​</a></h3>
+<ol>
+<li>≤ 2 steps from text selection to action fired — no sidebar navigation required</li>
+<li>First streaming token visible in &lt; 2s from action trigger</li>
+<li>Confidence indicator readable in &lt; 1s — no cognitive decoding required</li>
+<li>Citation opens Confluence source in 1 click — no search required</li>
+<li>Comtor submits work without requesting dev confirmation — ultimate behavioral metric</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="novel-ux-patterns">Novel UX Patterns<a href="#novel-ux-patterns" class="hash-link" aria-label="Direct link to Novel UX Patterns" title="Direct link to Novel UX Patterns">​</a></h3>
+<p><strong>Established (no education needed):</strong></p>
+<ul>
+<li>Text selection as entry point — native browser behavior</li>
+<li>Sidebar panel — familiar from browser tools, Notion, etc.</li>
+<li>Inline citations [1][2] — familiar from Wikipedia, Perplexity</li>
+</ul>
+<p><strong>Novel (require brief onboarding education):</strong></p>
+<ul>
+<li>Confidence indicator ●●●●○ — not a standard pattern; needs one-time explanation</li>
+<li>AI explicitly signaling uncertainty — counter to user expectations; needs framing as feature</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="experience-mechanics">Experience Mechanics<a href="#experience-mechanics" class="hash-link" aria-label="Direct link to Experience Mechanics" title="Direct link to Experience Mechanics">​</a></h3>
+<p><strong>Initiation:</strong></p>
+<ul>
+<li>Text selection on any page → SelectionTooltip appears near selection with [Translate] [Summarize] [Ask]</li>
+<li>Alternative: Cmd+K → focus sidebar input directly (sidebar opens if closed)</li>
+</ul>
+<p><strong>Interaction:</strong></p>
+<ul>
+<li>Click action → sidebar opens, loading state shows immediately</li>
+<li>Target language pre-selected from last session (no re-selection needed)</li>
+<li>Streaming begins: confidence indicator + source count appears first, then response text</li>
+</ul>
+<p><strong>Feedback:</strong></p>
+<ul>
+<li>Confidence indicator and &quot;N internal sources&quot; render before response body</li>
+<li>Response text streams with inline citations [1][2]</li>
+<li>Accept/Reject feedback buttons appear after response completes — non-blocking</li>
+</ul>
+<p><strong>Completion:</strong></p>
+<ul>
+<li>User reads response + optionally clicks citation to verify in Confluence</li>
+<li>[Accept] logs positive feedback signal; subtle animation confirms</li>
+<li>Sidebar stays open, cleared for next action — no restart required</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="visual-design-foundation">Visual Design Foundation<a href="#visual-design-foundation" class="hash-link" aria-label="Direct link to Visual Design Foundation" title="Direct link to Visual Design Foundation">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="color-system">Color System<a href="#color-system" class="hash-link" aria-label="Direct link to Color System" title="Direct link to Color System">​</a></h3>
+<p><strong>Base palette (Linear-inspired dark theme):</strong></p>
+<table><thead><tr><th>Token</th><th>Value</th><th>Usage</th></tr></thead><tbody><tr><td><code>--bg-base</code></td><td><code>#0d0d0d</code></td><td>Sidebar background</td></tr><tr><td><code>--bg-surface</code></td><td><code>#141414</code></td><td>Response card background</td></tr><tr><td><code>--bg-elevated</code></td><td><code>#1a1a1a</code></td><td>Hover states, tooltips</td></tr><tr><td><code>--border</code></td><td><code>#222222</code></td><td>Dividers, card borders</td></tr><tr><td><code>--text-primary</code></td><td><code>#f5f5f5</code></td><td>Main response text</td></tr><tr><td><code>--text-secondary</code></td><td><code>#888888</code></td><td>Labels, metadata, timestamps</td></tr><tr><td><code>--text-muted</code></td><td><code>#555555</code></td><td>Placeholder, disabled</td></tr><tr><td><code>--accent</code></td><td><code>#5E6AD2</code></td><td>Links, actions, confidence fill dots</td></tr><tr><td><code>--accent-hover</code></td><td><code>#6B78E5</code></td><td>Interactive accent hover</td></tr><tr><td><code>--warning</code></td><td><code>#F59E0B</code></td><td>Low-confidence indicator (amber)</td></tr><tr><td><code>--error</code></td><td><code>#EF4444</code></td><td>Error states</td></tr><tr><td><code>--success</code></td><td><code>#10B981</code></td><td>Accept confirmation</td></tr></tbody></table>
+<p><strong>Confidence dot colors:</strong></p>
+<ul>
+<li>Filled ● : <code>--accent</code> (#5E6AD2)</li>
+<li>Empty ○ : <code>--text-muted</code> (#555555)</li>
+<li>Low-confidence filled ● : <code>--warning</code> (#F59E0B)</li>
+</ul>
+<p><strong>Accessibility:</strong> All text/background combinations target WCAG AA (4.5:1 contrast minimum).
+Primary text (#f5f5f5) on base (#0d0d0d) = 18.1:1 contrast — exceeds AAA.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="typography-system">Typography System<a href="#typography-system" class="hash-link" aria-label="Direct link to Typography System" title="Direct link to Typography System">​</a></h3>
+<p><strong>Font family:</strong> Inter (Google Fonts — excellent readability at small sizes, enterprise standard)</p>
+<table><thead><tr><th>Role</th><th>Size</th><th>Weight</th><th>Line height</th></tr></thead><tbody><tr><td>Response body</td><td>14px</td><td>400</td><td>1.6</td></tr><tr><td>Labels &amp; metadata</td><td>12px</td><td>400</td><td>1.4</td></tr><tr><td>Section headers</td><td>13px</td><td>600</td><td>1.3</td></tr><tr><td>Citation links</td><td>12px</td><td>400</td><td>1.4</td></tr><tr><td>Button text</td><td>13px</td><td>500</td><td>1</td></tr><tr><td>Confidence count</td><td>11px</td><td>500</td><td>1</td></tr></tbody></table>
+<p><strong>Reading comfort:</strong> 14px body at 380px sidebar width ≈ 55-65 chars per line — optimal for reading.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="spacing--layout-foundation">Spacing &amp; Layout Foundation<a href="#spacing--layout-foundation" class="hash-link" aria-label="Direct link to Spacing &amp; Layout Foundation" title="Direct link to Spacing &amp; Layout Foundation">​</a></h3>
+<p><strong>Base unit:</strong> 4px</p>
+<p><strong>Spacing scale:</strong></p>
+<ul>
+<li><code>space-1</code>: 4px — tight grouping (icon + label)</li>
+<li><code>space-2</code>: 8px — within-component spacing</li>
+<li><code>space-3</code>: 12px — component internal padding</li>
+<li><code>space-4</code>: 16px — between components, sidebar padding</li>
+<li><code>space-6</code>: 24px — section separation</li>
+</ul>
+<p><strong>Layout:</strong></p>
+<ul>
+<li>Sidebar width: 380px fixed (right-anchored)</li>
+<li>Sidebar height: 100vh (full page height)</li>
+<li>Content padding: 16px horizontal, 12px vertical</li>
+<li>Response card: 12px padding, 4px border-radius, <code>--bg-surface</code> background</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="accessibility-considerations">Accessibility Considerations<a href="#accessibility-considerations" class="hash-link" aria-label="Direct link to Accessibility Considerations" title="Direct link to Accessibility Considerations">​</a></h3>
+<ul>
+<li>All interactive elements have visible focus ring (2px <code>--accent</code> outline, 2px offset)</li>
+<li>Confidence dots accompanied by text label for screen readers (&quot;High confidence: 4 of 5&quot;)</li>
+<li>Error/warning states use both color AND icon — not color alone</li>
+<li>Minimum touch/click target: 32px height for all interactive elements</li>
+<li>Font sizes never below 11px; 12px minimum for body-adjacent text</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="design-direction-decision">Design Direction Decision<a href="#design-direction-decision" class="hash-link" aria-label="Direct link to Design Direction Decision" title="Direct link to Design Direction Decision">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="design-directions-explored">Design Directions Explored<a href="#design-directions-explored" class="hash-link" aria-label="Direct link to Design Directions Explored" title="Direct link to Design Directions Explored">​</a></h3>
+<p>Three directions were generated and evaluated (see <code>ux-design-directions.html</code> for interactive mockups):</p>
+<table><thead><tr><th>Direction</th><th>Concept</th><th>Confidence Treatment</th><th>Entry Point</th></tr></thead><tbody><tr><td><strong>A — Confidence First</strong></td><td>Structured toolbar + prominent confidence block</td><td>Full block above response</td><td>Action toolbar</td></tr><tr><td><strong>B — Command Minimal</strong></td><td>Ultra-minimal chrome, Cmd+K first</td><td>Bar-style meta line</td><td>Command palette</td></tr><tr><td><strong>C — Conversational Cards</strong></td><td>Chat-bubble layout, self-contained cards</td><td>Card header per response</td><td>Chat input</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="chosen-direction">Chosen Direction<a href="#chosen-direction" class="hash-link" aria-label="Direct link to Chosen Direction" title="Direct link to Chosen Direction">​</a></h3>
+<p><strong>Primary: Direction A — Confidence First</strong></p>
+<p><strong>Adopted element from Direction C:</strong> Low-confidence card as a distinct amber UI mode (not just a subtle indicator change)</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="design-rationale">Design Rationale<a href="#design-rationale" class="hash-link" aria-label="Direct link to Design Rationale" title="Direct link to Design Rationale">​</a></h3>
+<ol>
+<li><strong>Confidence block leads</strong> — Direction A&#x27;s prominence of the confidence signal before response text directly serves Linh&#x27;s anxiety reduction goal. This is the most critical UX decision in the product.</li>
+<li><strong>Action toolbar discoverable</strong> — New comtor users immediately understand what Genie can do. Direction B&#x27;s command-first approach requires learning; too high a bar for pilot onboarding.</li>
+<li><strong>Direction C&#x27;s low-confidence pattern</strong> is the clearest expression of graceful degradation across all three — the amber card with explicit warning message is visually unmissable. Adopt this pattern into Direction A for low-confidence states.</li>
+<li><strong>Sidebar panel vs. chat layout</strong> — Direction A keeps conversation secondary and AI action primary; aligns with task-completion mental model of enterprise users rather than open-ended conversation.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-approach-1">Implementation Approach<a href="#implementation-approach-1" class="hash-link" aria-label="Direct link to Implementation Approach" title="Direct link to Implementation Approach">​</a></h3>
+<p><strong>Sidebar structure (top to bottom):</strong></p>
+<ol>
+<li>Header — Genie logo + connection status</li>
+<li>Action toolbar — Translate / Summarize / Next Steps / Ask (always visible)</li>
+<li>Response area — confidence block → response card → citations → feedback</li>
+<li>Input row — follow-up question field + send</li>
+</ol>
+<p><strong>Low-confidence state (from Direction C):</strong></p>
+<ul>
+<li>Replace confidence block with amber-tinted card header</li>
+<li>Inline warning message: &quot;Không tìm thấy context nội bộ. Bản dịch dựa trên general knowledge — nên verify với technical owner.&quot;</li>
+<li>Dots change to amber ●○○○○ color scheme</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="user-journey-flows">User Journey Flows<a href="#user-journey-flows" class="hash-link" aria-label="Direct link to User Journey Flows" title="Direct link to User Journey Flows">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="journey-1-comtor--core-translation-happy-path">Journey 1: Comtor — Core Translation (Happy Path)<a href="#journey-1-comtor--core-translation-happy-path" class="hash-link" aria-label="Direct link to Journey 1: Comtor — Core Translation (Happy Path)" title="Direct link to Journey 1: Comtor — Core Translation (Happy Path)">​</a></h3>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">flowchart TD</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    A([📄 User on any web page]) --&gt; B[Selects text on page]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    B --&gt; C{SelectionTooltip appears?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    C --&gt;|Yes - Genie active| D[Clicks Translate button]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    C --&gt;|No - sidebar closed| E[Opens sidebar via Cmd+K or icon]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    E --&gt; D</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    D --&gt; F{Language preference set?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    F --&gt;|Yes - persisted from last session| G[Action fires immediately]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    F --&gt;|No - first time| H[Language picker appears\ndefaults to Vietnamese]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    H --&gt; I[User selects language\nPreference saved immediately]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    I --&gt; G</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    G --&gt; J[Sidebar opens / focuses]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    J --&gt; K[Streaming begins:\nConfidence block renders first]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    K --&gt; L{Confluence context found?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    L --&gt;|High confidence ●●●●○| M[Response text streams in\nwith inline citations]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    L --&gt;|Low confidence ●○○○○| N[Amber warning card renders:\nKhông tìm thấy context nội bộ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    M --&gt; O[Citation chips clickable below response]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    N --&gt; O2[General LLM answer streams\nbelow warning message]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    O --&gt; P[Accept / Reject buttons appear]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    O2 --&gt; P</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    P --&gt; Q{User action?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Q --&gt;|Accept| R[Feedback logged\nSubtle success animation\nSidebar ready for next]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Q --&gt;|Reject| S[Rejection logged\nInput field focused for follow-up]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Q --&gt;|Click citation| T[Opens Confluence source in new tab]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    T --&gt; P</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    R --&gt; U([Ready for next selection])</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    S --&gt; U</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><strong>AC — Language Preference Persistence:</strong></p>
+<blockquote>
+<p>Given user selects a target language, When they trigger Translate again in any future session, Then that language is pre-selected — no re-selection required until user explicitly changes it.</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="journey-2-first-time-user-onboarding">Journey 2: First-Time User Onboarding<a href="#journey-2-first-time-user-onboarding" class="hash-link" aria-label="Direct link to Journey 2: First-Time User Onboarding" title="Direct link to Journey 2: First-Time User Onboarding">​</a></h3>
+<p><strong>Onboarding model:</strong> Self-service capable (IT deploys via Chrome Policy). v1 pilot includes 1-on-1 session with each comtor, but UX must not require it.</p>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">flowchart TD</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    A([👤 First install — Chrome Policy managed]) --&gt; B[Opens any browser tab\nGenie icon appears in toolbar]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    B --&gt; C[Genie sidebar auto-opens\nwith onboarding overlay — Step 1 of 3]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    C --&gt; D[Hello message + Connect with Company Account CTA]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    D --&gt; E[User clicks Connect]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    E --&gt; F[SSO auth — popup OAuth flow\nDoes not navigate away from page]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    F --&gt; G{Auth success?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    G --&gt;|No| H[Inline error + Retry\nContact IT Admin link]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    H --&gt; E</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    G --&gt;|Yes| I[Step 2 of 3: Feature tour\nToolbar highlights: Translate · Summarize · Ask]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    I --&gt; J[Step 3 of 3: Try it now]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    J --&gt; K{Is current page a Confluence page?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    K --&gt;|Yes| L[Pre-highlight a term on current page\nPrompt: Select this text and click Translate]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    K --&gt;|No| M[Show prompt: Open a Confluence page first\nProvide link to company Confluence home]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    M --&gt; N[User navigates to Confluence]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    N --&gt; L</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    L --&gt; O{User tries demo?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    O --&gt;|Yes| P[Demo translation runs with Confluence RAG]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    O --&gt;|Skip| Q[Onboarding complete — normal sidebar state]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    P --&gt; R{Demo returns citation?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    R --&gt;|Yes — AHA MOMENT| S[Citation from Confluence visible\nTooltip: Genie always shows sources from your org]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    R --&gt;|No citation — edge case| T[Low-confidence demo\nTooltip explains: Sometimes no internal context — Genie tells you]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    S --&gt; Q</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    T --&gt; Q</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Q --&gt; U([Sidebar collapses to icon\nReady for real use])</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="journey-3-developer--confluence-qa-search">Journey 3: Developer — Confluence Q&amp;A Search<a href="#journey-3-developer--confluence-qa-search" class="hash-link" aria-label="Direct link to Journey 3: Developer — Confluence Q&amp;A Search" title="Direct link to Journey 3: Developer — Confluence Q&amp;A Search">​</a></h3>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">flowchart TD</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    A([💻 Developer on any page]) --&gt; B{Entry point?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    B --&gt;|Cmd+K shortcut| C[Sidebar opens with input focused]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    B --&gt;|SelectionTooltip on text| D[Clicks Ask button]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    C --&gt; E[Types natural language question\nin any language]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    D --&gt; E</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    E --&gt; F[Submit — genie-api processes]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    F --&gt; G[Confidence block renders first:\nSource count appears]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    G --&gt; H{Sources found?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    H --&gt;|Multiple sources| I[Response streams with inline citations]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    H --&gt;|Single source| J[Response + recency signal if page is stale]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    H --&gt;|No sources| K[Amber low-confidence card\nGeneral answer + verification warning]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    I --&gt; L[Numbered source list renders below:\ntitled + linkable to Confluence section]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    J --&gt; L</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    K --&gt; M[Warning message prominent\nSuggests: verify with doc owner]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    L --&gt; N{User action?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    M --&gt; N</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    N --&gt;|Click citation| O[Opens Confluence in new tab\nto specific section anchor]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    N --&gt;|Follow-up question| P[Appended to same session\nContext from prior turns preserved]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    N --&gt;|Accept| Q[Feedback logged — no interruption]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    P --&gt; F</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    O --&gt; N</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    Q --&gt; R([Session continues or sidebar closes])</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="journey-4-session-expiry--inline-re-auth">Journey 4: Session Expiry — Inline Re-Auth<a href="#journey-4-session-expiry--inline-re-auth" class="hash-link" aria-label="Direct link to Journey 4: Session Expiry — Inline Re-Auth" title="Direct link to Journey 4: Session Expiry — Inline Re-Auth">​</a></h3>
+<div class="language-mermaid codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-mermaid codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">flowchart TD</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    A([🔐 SSO session expires\nwhile sidebar is open]) --&gt; B{User triggers any AI action?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    B --&gt;|Yes| C[genie-api returns 401 Unauthorized]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    B --&gt;|No — passive expiry| D[Slim auth banner appears\nat top of sidebar]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    C --&gt; D</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    D --&gt; E[Banner: Phiên làm việc đã hết hạn\nĐăng nhập lại — CTA button]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    E --&gt; F[Previous response still visible\nbelow banner — context not lost]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    F --&gt; G[User clicks Đăng nhập lại]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    G --&gt; H[SSO OAuth popup opens\nDoes not navigate away from page]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    H --&gt; I{Re-auth success?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    I --&gt;|Yes| J[Popup closes\nAuth banner disappears]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    J --&gt; K{Was action pending?}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    K --&gt;|Yes| L[Action retries automatically\nNo re-submission required]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    K --&gt;|No| M[Sidebar resumes normal state]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    L --&gt; M</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    I --&gt;|Failed / timeout| N[Error in popup\nRetry or contact IT link]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    N --&gt; G</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    M --&gt; O([User continues workflow\nno context lost])</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p><strong>AC — Session Expiry Auto-Retry:</strong></p>
+<blockquote>
+<p>Given user&#x27;s SSO session expires while sidebar is open, When any AI action is triggered, Then sidebar displays inline auth banner (response area remains visible), SSO re-auth via popup (no page navigation), and pending action retries automatically after successful re-auth — user does not need to re-submit.</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="journey-patterns">Journey Patterns<a href="#journey-patterns" class="hash-link" aria-label="Direct link to Journey Patterns" title="Direct link to Journey Patterns">​</a></h3>
+<p><strong>Entry Patterns:</strong></p>
+<ul>
+<li>Selection → Tooltip → Action (zero sidebar interaction — lowest friction)</li>
+<li>Cmd+K → Direct input (power user, keyboard-first)</li>
+<li>Toolbar button click (explicit, discoverable for new users)</li>
+</ul>
+<p><strong>Confidence Patterns:</strong></p>
+<ul>
+<li>High: neutral card, blue dots ●●●●○, confidence block before response text</li>
+<li>Low: amber card, amber dots ●○○○○, warning message before response</li>
+<li>No sources: same as low confidence + &quot;Không tìm thấy context nội bộ&quot; explicit message</li>
+</ul>
+<p><strong>Feedback Patterns:</strong></p>
+<ul>
+<li>Accept/Reject always non-blocking — appears after response complete, never interrupts reading</li>
+<li>Accept: silent success animation + feedback logged</li>
+<li>Reject: silent log, input focused for optional follow-up</li>
+</ul>
+<p><strong>Error Recovery Patterns:</strong></p>
+<ul>
+<li>genie-api offline → OfflineBanner top of sidebar, actions disabled, retry on reconnect</li>
+<li>Auth expired → Inline slim banner, popup re-auth, auto-retry pending action</li>
+<li>Confluence index unavailable → Low-confidence mode with specific Confluence message</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="flow-optimization-principles">Flow Optimization Principles<a href="#flow-optimization-principles" class="hash-link" aria-label="Direct link to Flow Optimization Principles" title="Direct link to Flow Optimization Principles">​</a></h3>
+<ol>
+<li><strong>Zero re-work on error</strong> — every error state auto-retries or preserves context; users never lose work</li>
+<li><strong>Language preference persists</strong> — one selection, remembered forever; repeat users have zero overhead</li>
+<li><strong>Onboarding guarantees aha moment</strong> — redirect to Confluence page if needed; don&#x27;t let luck decide first impression</li>
+<li><strong>Session expiry is invisible to workflow</strong> — inline banner + auto-retry means Linh never notices the session expired</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="component-strategy">Component Strategy<a href="#component-strategy" class="hash-link" aria-label="Direct link to Component Strategy" title="Direct link to Component Strategy">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="design-system-components-shadcnui--adopt-directly">Design System Components (shadcn/ui — adopt directly)<a href="#design-system-components-shadcnui--adopt-directly" class="hash-link" aria-label="Direct link to Design System Components (shadcn/ui — adopt directly)" title="Direct link to Design System Components (shadcn/ui — adopt directly)">​</a></h3>
+<table><thead><tr><th>Component</th><th>Usage in Genie</th></tr></thead><tbody><tr><td><code>Button</code></td><td>Toolbar actions (Translate/Summarize/Ask), Accept/Reject feedback buttons</td></tr><tr><td><code>Input</code> / <code>Textarea</code></td><td>Follow-up question input field</td></tr><tr><td><code>ScrollArea</code></td><td>Scrollable response content area</td></tr><tr><td><code>Tooltip</code></td><td>Keyboard shortcut hints, metadata labels</td></tr><tr><td><code>Badge</code></td><td>Source count (&quot;4 sources&quot;), model name label</td></tr><tr><td><code>Separator</code></td><td>Section dividers within sidebar</td></tr><tr><td><code>Skeleton</code></td><td>Loading placeholders while awaiting response</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="custom-components">Custom Components<a href="#custom-components" class="hash-link" aria-label="Direct link to Custom Components" title="Direct link to Custom Components">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="confidenceindicator">ConfidenceIndicator<a href="#confidenceindicator" class="hash-link" aria-label="Direct link to ConfidenceIndicator" title="Direct link to ConfidenceIndicator">​</a></h4>
+<p><strong>Purpose:</strong> Communicate AI response reliability before user reads content — centerpiece of trust UI.</p>
+<p><strong>Anatomy:</strong> 5 dots (●●●●○) + confidence label + source count</p>
+<p><strong>States:</strong></p>
+<ul>
+<li><code>high</code> (4-5 dots): blue dots (#5E6AD2), &quot;High confidence&quot;, neutral card background</li>
+<li><code>medium</code> (3 dots): blue dots, &quot;Medium confidence&quot;, neutral background</li>
+<li><code>low</code> (1-2 dots): amber dots (#F59E0B), &quot;Low confidence&quot;, amber-tinted background (#1a1200)</li>
+<li><code>none</code> (0 dots): amber dots, &quot;No internal context&quot;, amber-tinted background</li>
+</ul>
+<p><strong>Accessibility:</strong> <code>aria-label=&quot;Confidence: 4 out of 5. 3 internal sources.&quot;</code> — screen reader text alongside visual dots.</p>
+<hr>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="selectiontooltip">SelectionTooltip<a href="#selectiontooltip" class="hash-link" aria-label="Direct link to SelectionTooltip" title="Direct link to SelectionTooltip">​</a></h4>
+<p><strong>Purpose:</strong> Zero-friction action trigger at the point of text selection — eliminates need to open sidebar first.</p>
+<p><strong>Anatomy:</strong> Floating card with 3 action buttons [Translate] [Summarize] [Ask], positioned above/below selection midpoint.</p>
+<p><strong>States:</strong> <code>visible</code> (on mouseup with text selected), <code>hidden</code> (click outside or action triggered)</p>
+<p><strong>Behavior:</strong> Appears within 300ms of mouseup; dismisses on Escape or click outside; auto-repositions if near viewport edge.</p>
+<p><strong>Accessibility:</strong> <code>role=&quot;toolbar&quot;</code>, keyboard navigable with Arrow keys, Enter to activate focused button.</p>
+<hr>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="citationchip">CitationChip<a href="#citationchip" class="hash-link" aria-label="Direct link to CitationChip" title="Direct link to CitationChip">​</a></h4>
+<p><strong>Purpose:</strong> Inline source reference that lets users verify Confluence sources in one click.</p>
+<p><strong>Anatomy:</strong> ↗ icon + Confluence page title (truncated at 30 chars with full title in tooltip).</p>
+<p><strong>States:</strong> <code>default</code> (accent bg #1a1e3d), <code>hover</code> (brighter), <code>visited</code> (muted color)</p>
+<p><strong>Behavior:</strong> Opens Confluence URL in new tab (<code>target=&quot;_blank&quot; rel=&quot;noopener&quot;</code>).</p>
+<p><strong>Accessibility:</strong> <code>aria-label=&quot;Source: [full page title]&quot;</code>.</p>
+<hr>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="streamingresponse">StreamingResponse<a href="#streamingresponse" class="hash-link" aria-label="Direct link to StreamingResponse" title="Direct link to StreamingResponse">​</a></h4>
+<p><strong>Purpose:</strong> Response container supporting progressive token-by-token text rendering.</p>
+<p><strong>Anatomy:</strong> Text content area with animated cursor while streaming; CitationChips render inline as encountered in stream.</p>
+<p><strong>States:</strong> <code>streaming</code> (cursor blinking, text appending), <code>complete</code> (cursor hidden, feedback buttons appear)</p>
+<p><strong>Behavior:</strong> ConfidenceIndicator renders and is fully visible before streaming text begins.</p>
+<hr>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="offlinebanner--authbanner">OfflineBanner + AuthBanner<a href="#offlinebanner--authbanner" class="hash-link" aria-label="Direct link to OfflineBanner + AuthBanner" title="Direct link to OfflineBanner + AuthBanner">​</a></h4>
+<p><strong>Shared anatomy:</strong> Slim banner (40px height) pinned to top of sidebar — icon + message + CTA button. Neither banner hides previous response content.</p>
+<ul>
+<li><strong>OfflineBanner:</strong> Muted gray — &quot;Không thể kết nối đến Genie · [Retry]&quot;</li>
+<li><strong>AuthBanner:</strong> Amber (#1a1200 bg) — &quot;Phiên làm việc đã hết hạn · [Đăng nhập lại]&quot;</li>
+</ul>
+<hr>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="lowconfidencecard">LowConfidenceCard<a href="#lowconfidencecard" class="hash-link" aria-label="Direct link to LowConfidenceCard" title="Direct link to LowConfidenceCard">​</a></h4>
+<p><strong>Purpose:</strong> Distinct amber-styled response container for low/no-confidence states — visually unmissable.</p>
+<p><strong>Anatomy:</strong> Amber card header (ConfidenceIndicator in amber state) + warning message block + response text below.</p>
+<p><strong>Warning message:</strong> &quot;Không tìm thấy context nội bộ. Bản dịch dựa trên general knowledge — nên verify với technical owner.&quot;</p>
+<hr>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="onboardingoverlay">OnboardingOverlay<a href="#onboardingoverlay" class="hash-link" aria-label="Direct link to OnboardingOverlay" title="Direct link to OnboardingOverlay">​</a></h4>
+<p><strong>Purpose:</strong> 3-step first-use wizard covering SSO connect, feature tour, and guided demo.</p>
+<p><strong>Anatomy:</strong> Full-sidebar overlay with step progress indicator (1/3, 2/3, 3/3), content area, and primary CTA.</p>
+<p><strong>Steps:</strong> (1) SSO connect → (2) Feature tour with toolbar highlights → (3) Guided demo on Confluence page.</p>
+<p><strong>Behavior:</strong> If user is not on a Confluence page at Step 3, prompts navigation to Confluence before demo.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="component-implementation-strategy">Component Implementation Strategy<a href="#component-implementation-strategy" class="hash-link" aria-label="Direct link to Component Implementation Strategy" title="Direct link to Component Implementation Strategy">​</a></h3>
+<ul>
+<li>All custom components use Tailwind CSS utility classes with project design tokens</li>
+<li>Custom components inject cleanly into Shadow DOM (no external CSS dependencies)</li>
+<li>shadcn/ui components are owned code — AI coding agents can read and modify directly</li>
+<li>Shared design tokens (<code>--accent</code>, <code>--bg-surface</code>, etc.) ensure visual consistency across all components</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-roadmap">Implementation Roadmap<a href="#implementation-roadmap" class="hash-link" aria-label="Direct link to Implementation Roadmap" title="Direct link to Implementation Roadmap">​</a></h3>
+<p><strong>Phase 1 — Core (required for functional demo):</strong></p>
+<ol>
+<li><code>ConfidenceIndicator</code> — centerpiece of trust UI; nothing works without this</li>
+<li><code>StreamingResponse</code> — required for core translation loop</li>
+<li><code>CitationChip</code> — required for Developer trust requirement</li>
+<li><code>LowConfidenceCard</code> — required for graceful degradation</li>
+</ol>
+<p><strong>Phase 2 — Entry points and error states:</strong>
+5. <code>SelectionTooltip</code> — zero-friction entry; without this users must open sidebar manually
+6. <code>OfflineBanner</code> + <code>AuthBanner</code> — error and session states</p>
+<p><strong>Phase 3 — Onboarding:</strong>
+7. <code>OnboardingOverlay</code> — 3-step wizard; can ship pilot with simplified version initially</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ux-consistency-patterns">UX Consistency Patterns<a href="#ux-consistency-patterns" class="hash-link" aria-label="Direct link to UX Consistency Patterns" title="Direct link to UX Consistency Patterns">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="button-hierarchy">Button Hierarchy<a href="#button-hierarchy" class="hash-link" aria-label="Direct link to Button Hierarchy" title="Direct link to Button Hierarchy">​</a></h3>
+<p><strong>Toolbar actions (Translate / Summarize / Next Steps / Ask):</strong></p>
+<ul>
+<li>Equal visual weight — all peer-level; no primary/secondary distinction</li>
+<li><code>active</code> state: accent-tinted background while action in progress</li>
+<li><code>disabled</code> state: muted color, no hover, when sidebar offline</li>
+</ul>
+<p><strong>Response actions:</strong></p>
+<ul>
+<li><code>Accept</code>: positive secondary — green-tinted border (<code>border-color: #1a3a2a, color: #4ade80</code>) — never filled</li>
+<li><code>Reject</code>: neutral secondary — default border (#222), muted text</li>
+<li><code>Retry</code>: accent border — draws attention in error recovery</li>
+<li>Rule: never use solid/filled buttons in response area — only border buttons to avoid competing with content</li>
+</ul>
+<p><strong>Only 1 solid button at any time:</strong> the Send (↑) button in the input row.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="feedback-patterns">Feedback Patterns<a href="#feedback-patterns" class="hash-link" aria-label="Direct link to Feedback Patterns" title="Direct link to Feedback Patterns">​</a></h3>
+<table><thead><tr><th>State</th><th>Treatment</th><th>Dismissible?</th></tr></thead><tbody><tr><td><strong>Success (Accept)</strong></td><td>Brief checkmark animation on button, silent</td><td>Auto-dismisses</td></tr><tr><td><strong>Warning (Low confidence)</strong></td><td>Amber LowConfidenceCard — persistent</td><td>No — user must read and scroll past</td></tr><tr><td><strong>Error (Offline)</strong></td><td>OfflineBanner slim at top</td><td>No — until connection restored</td></tr><tr><td><strong>Error (Auth expired)</strong></td><td>AuthBanner amber slim at top</td><td>No — until re-auth complete</td></tr><tr><td><strong>Info</strong></td><td>Muted text label (timestamp, model, freshness)</td><td>N/A — passive</td></tr></tbody></table>
+<p><strong>Rule: No toast notifications.</strong> All feedback is inline within the sidebar — never floating overlays that obscure page content.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="loading-states">Loading States<a href="#loading-states" class="hash-link" aria-label="Direct link to Loading States" title="Direct link to Loading States">​</a></h3>
+<ul>
+<li><strong>Action triggered:</strong> Confidence block with skeleton dots renders immediately; text streams after</li>
+<li><strong>Extension init:</strong> Logo + subtle spinner — sidebar visible, content loading</li>
+<li><strong>Citation resolution:</strong> Chip title renders immediately; Confluence link resolves async in background</li>
+</ul>
+<p><strong>Rule: Never blank screen.</strong> Skeleton state must appear within 100ms of action trigger.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="empty-states">Empty States<a href="#empty-states" class="hash-link" aria-label="Direct link to Empty States" title="Direct link to Empty States">​</a></h3>
+<table><thead><tr><th>Context</th><th>Treatment</th></tr></thead><tbody><tr><td>First open, not onboarded</td><td>OnboardingOverlay — no empty sidebar shown</td></tr><tr><td>First open, onboarded, no session</td><td>Prompt: &quot;Select text on this page, or press Cmd+K to ask anything&quot;</td></tr><tr><td>Confluence no results</td><td>LowConfidenceCard (not a traditional empty state — Genie always responds)</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="navigation-patterns">Navigation Patterns<a href="#navigation-patterns" class="hash-link" aria-label="Direct link to Navigation Patterns" title="Direct link to Navigation Patterns">​</a></h3>
+<p>Sidebar is single-panel — no nested navigation in v1.</p>
+<ul>
+<li>Scroll within response area for long responses (ScrollArea component)</li>
+<li>No back button, no breadcrumbs — linear interaction model</li>
+<li>Toolbar always visible at top — context never lost</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="interaction-micro-patterns">Interaction Micro-patterns<a href="#interaction-micro-patterns" class="hash-link" aria-label="Direct link to Interaction Micro-patterns" title="Direct link to Interaction Micro-patterns">​</a></h3>
+<ul>
+<li><strong>Hover states:</strong> All interactive elements show hover within 100ms — <code>background: --bg-elevated</code> or <code>border-color</code> shift</li>
+<li><strong>Focus rings:</strong> 2px accent outline, 2px offset — visible on all keyboard-navigable elements</li>
+<li><strong>Animation timing:</strong> 150ms ease-out for state transitions; 300ms for overlay appear/disappear</li>
+<li><strong>Cursor:</strong> <code>pointer</code> on all clickable elements — no ambiguity</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="responsive-design--accessibility">Responsive Design &amp; Accessibility<a href="#responsive-design--accessibility" class="hash-link" aria-label="Direct link to Responsive Design &amp; Accessibility" title="Direct link to Responsive Design &amp; Accessibility">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="responsive-strategy">Responsive Strategy<a href="#responsive-strategy" class="hash-link" aria-label="Direct link to Responsive Strategy" title="Direct link to Responsive Strategy">​</a></h3>
+<p><strong>Platform scope:</strong> Desktop-only, Chrome browser (v1). Mobile deferred to v3+.</p>
+<p><strong>Sidebar layout across desktop sizes:</strong></p>
+<ul>
+<li>Fixed width: 380px — does not change with screen width</li>
+<li>Height: 100dvh — full viewport height; response area scrollable inside</li>
+<li>Sticky: toolbar (top) + input row (bottom) — always accessible regardless of scroll position</li>
+<li>Minimum tested viewport: 1366×768 (common enterprise laptop in Vietnam)</li>
+<li>At 1366px: sidebar occupies ~28% of screen width — host page content visible at 72%</li>
+</ul>
+<p><strong>Browser zoom:</strong> All sizing in <code>rem</code> — scales correctly at 100%, 110%, 125% zoom.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="breakpoint-strategy">Breakpoint Strategy<a href="#breakpoint-strategy" class="hash-link" aria-label="Direct link to Breakpoint Strategy" title="Direct link to Breakpoint Strategy">​</a></h3>
+<p>No traditional breakpoints — single-platform (desktop Chrome).</p>
+<p><strong>Within sidebar, content adapts to viewport height:</strong></p>
+<ul>
+<li><code>&gt;= 768px height</code>: Full layout — toolbar, response area, input row all visible</li>
+<li><code>&lt; 768px height</code>: Response area height contracts; toolbar and input row remain sticky</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="accessibility-strategy">Accessibility Strategy<a href="#accessibility-strategy" class="hash-link" aria-label="Direct link to Accessibility Strategy" title="Direct link to Accessibility Strategy">​</a></h3>
+<p><strong>Target compliance:</strong> WCAG 2.1 Level AA</p>
+<table><thead><tr><th>Requirement</th><th>Implementation</th></tr></thead><tbody><tr><td>Color contrast (4.5:1 AA)</td><td>Primary text on base: 18.1:1 — exceeds AAA</td></tr><tr><td>Focus indicators</td><td>2px accent (#5E6AD2) outline, 2px offset on all interactive elements</td></tr><tr><td>Not color-alone for status</td><td>Error/warning: color + icon always paired</td></tr><tr><td>Screen reader support</td><td><code>aria-label</code> on ConfidenceIndicator; <code>aria-live=&quot;polite&quot;</code> on StreamingResponse</td></tr><tr><td>Keyboard navigation</td><td>Full Tab order through toolbar → input → actions</td></tr><tr><td>Minimum click targets</td><td>Buttons: 32px height minimum; Send button: 36px</td></tr></tbody></table>
+<p><strong>Keyboard navigation map:</strong></p>
+<ul>
+<li><code>Tab</code> — toolbar buttons → input field → response actions</li>
+<li><code>Enter / Space</code> — activate focused button</li>
+<li><code>Escape</code> — dismiss SelectionTooltip</li>
+<li><code>Cmd+K</code> — open/focus sidebar from any page context</li>
+<li><code>Arrow keys</code> — navigate SelectionTooltip action buttons</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="testing-strategy">Testing Strategy<a href="#testing-strategy" class="hash-link" aria-label="Direct link to Testing Strategy" title="Direct link to Testing Strategy">​</a></h3>
+<p><strong>Responsive:</strong> Viewports 1366×768 and 1920×1080; zoom 100%, 110%, 125%; Chrome stable only.</p>
+<p><strong>Accessibility:</strong></p>
+<ul>
+<li>Automated: axe DevTools scan on each component during development</li>
+<li>Keyboard-only: Tab through full sidebar workflow without mouse</li>
+<li>Screen reader: macOS VoiceOver smoke test on ConfidenceIndicator, CitationChip, AuthBanner, LowConfidenceCard</li>
+<li>Contrast: Chrome DevTools accessibility panel for all color pairs</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="implementation-guidelines">Implementation Guidelines<a href="#implementation-guidelines" class="hash-link" aria-label="Direct link to Implementation Guidelines" title="Direct link to Implementation Guidelines">​</a></h3>
+<p><strong>Responsive:</strong></p>
+<ul>
+<li><code>rem</code> for all font sizes and spacing — never fixed <code>px</code> for user-facing sizes</li>
+<li><code>height: 100dvh</code> for sidebar (dynamic viewport height)</li>
+<li>Response ScrollArea: <code>overflow-y: auto</code> within fixed sidebar height</li>
+</ul>
+<p><strong>Accessibility:</strong></p>
+<ul>
+<li>Semantic HTML: <code>&lt;nav&gt;</code> for toolbar, <code>&lt;main&gt;</code> for response area, <code>&lt;footer&gt;</code> for input row</li>
+<li>All icon-only buttons have <code>aria-label</code></li>
+<li><code>aria-live=&quot;polite&quot;</code> on StreamingResponse — announces new content without interrupting</li>
+<li><code>aria-disabled=&quot;true&quot;</code> on toolbar buttons when offline (not <code>disabled</code> — preserves Tab focus)</li>
+<li>SelectionTooltip: <code>role=&quot;toolbar&quot;</code>, <code>aria-label=&quot;Genie actions&quot;</code>, manages own focus trap</li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/genie-docs/design-documents/planning-artifacts/research/technical-trends-chrome-extension-ai-assistant-2026-03-12"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Research Report: technical</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#executive-summary" class="table-of-contents__link toc-highlight">Executive Summary</a><ul><li><a href="#project-vision" class="table-of-contents__link toc-highlight">Project Vision</a></li><li><a href="#target-users" class="table-of-contents__link toc-highlight">Target Users</a></li><li><a href="#key-design-challenges" class="table-of-contents__link toc-highlight">Key Design Challenges</a></li><li><a href="#design-opportunities" class="table-of-contents__link toc-highlight">Design Opportunities</a></li></ul></li><li><a href="#core-user-experience" class="table-of-contents__link toc-highlight">Core User Experience</a><ul><li><a href="#defining-experience" class="table-of-contents__link toc-highlight">Defining Experience</a></li><li><a href="#platform-strategy" class="table-of-contents__link toc-highlight">Platform Strategy</a></li><li><a href="#effortless-interactions" class="table-of-contents__link toc-highlight">Effortless Interactions</a></li><li><a href="#critical-success-moments" class="table-of-contents__link toc-highlight">Critical Success Moments</a></li><li><a href="#experience-principles" class="table-of-contents__link toc-highlight">Experience Principles</a></li></ul></li><li><a href="#desired-emotional-response" class="table-of-contents__link toc-highlight">Desired Emotional Response</a><ul><li><a href="#primary-emotional-goals" class="table-of-contents__link toc-highlight">Primary Emotional Goals</a></li><li><a href="#emotional-journey-mapping" class="table-of-contents__link toc-highlight">Emotional Journey Mapping</a></li><li><a href="#micro-emotions" class="table-of-contents__link toc-highlight">Micro-Emotions</a></li><li><a href="#design-implications" class="table-of-contents__link toc-highlight">Design Implications</a></li><li><a href="#emotional-design-principles" class="table-of-contents__link toc-highlight">Emotional Design Principles</a></li></ul></li><li><a href="#ux-pattern-analysis--inspiration" class="table-of-contents__link toc-highlight">UX Pattern Analysis &amp; Inspiration</a><ul><li><a href="#inspiring-products-analysis" class="table-of-contents__link toc-highlight">Inspiring Products Analysis</a></li><li><a href="#transferable-ux-patterns" class="table-of-contents__link toc-highlight">Transferable UX Patterns</a></li><li><a href="#anti-patterns-to-avoid" class="table-of-contents__link toc-highlight">Anti-Patterns to Avoid</a></li><li><a href="#design-inspiration-strategy" class="table-of-contents__link toc-highlight">Design Inspiration Strategy</a></li></ul></li><li><a href="#design-system-foundation" class="table-of-contents__link toc-highlight">Design System Foundation</a><ul><li><a href="#design-system-choice" class="table-of-contents__link toc-highlight">Design System Choice</a></li><li><a href="#rationale-for-selection" class="table-of-contents__link toc-highlight">Rationale for Selection</a></li><li><a href="#implementation-approach" class="table-of-contents__link toc-highlight">Implementation Approach</a></li><li><a href="#customization-strategy" class="table-of-contents__link toc-highlight">Customization Strategy</a></li></ul></li><li><a href="#defining-core-experience" class="table-of-contents__link toc-highlight">Defining Core Experience</a><ul><li><a href="#defining-experience-1" class="table-of-contents__link toc-highlight">Defining Experience</a></li><li><a href="#user-mental-model" class="table-of-contents__link toc-highlight">User Mental Model</a></li><li><a href="#success-criteria" class="table-of-contents__link toc-highlight">Success Criteria</a></li><li><a href="#novel-ux-patterns" class="table-of-contents__link toc-highlight">Novel UX Patterns</a></li><li><a href="#experience-mechanics" class="table-of-contents__link toc-highlight">Experience Mechanics</a></li></ul></li><li><a href="#visual-design-foundation" class="table-of-contents__link toc-highlight">Visual Design Foundation</a><ul><li><a href="#color-system" class="table-of-contents__link toc-highlight">Color System</a></li><li><a href="#typography-system" class="table-of-contents__link toc-highlight">Typography System</a></li><li><a href="#spacing--layout-foundation" class="table-of-contents__link toc-highlight">Spacing &amp; Layout Foundation</a></li><li><a href="#accessibility-considerations" class="table-of-contents__link toc-highlight">Accessibility Considerations</a></li></ul></li><li><a href="#design-direction-decision" class="table-of-contents__link toc-highlight">Design Direction Decision</a><ul><li><a href="#design-directions-explored" class="table-of-contents__link toc-highlight">Design Directions Explored</a></li><li><a href="#chosen-direction" class="table-of-contents__link toc-highlight">Chosen Direction</a></li><li><a href="#design-rationale" class="table-of-contents__link toc-highlight">Design Rationale</a></li><li><a href="#implementation-approach-1" class="table-of-contents__link toc-highlight">Implementation Approach</a></li></ul></li><li><a href="#user-journey-flows" class="table-of-contents__link toc-highlight">User Journey Flows</a><ul><li><a href="#journey-1-comtor--core-translation-happy-path" class="table-of-contents__link toc-highlight">Journey 1: Comtor — Core Translation (Happy Path)</a></li><li><a href="#journey-2-first-time-user-onboarding" class="table-of-contents__link toc-highlight">Journey 2: First-Time User Onboarding</a></li><li><a href="#journey-3-developer--confluence-qa-search" class="table-of-contents__link toc-highlight">Journey 3: Developer — Confluence Q&amp;A Search</a></li><li><a href="#journey-4-session-expiry--inline-re-auth" class="table-of-contents__link toc-highlight">Journey 4: Session Expiry — Inline Re-Auth</a></li><li><a href="#journey-patterns" class="table-of-contents__link toc-highlight">Journey Patterns</a></li><li><a href="#flow-optimization-principles" class="table-of-contents__link toc-highlight">Flow Optimization Principles</a></li></ul></li><li><a href="#component-strategy" class="table-of-contents__link toc-highlight">Component Strategy</a><ul><li><a href="#design-system-components-shadcnui--adopt-directly" class="table-of-contents__link toc-highlight">Design System Components (shadcn/ui — adopt directly)</a></li><li><a href="#custom-components" class="table-of-contents__link toc-highlight">Custom Components</a></li><li><a href="#component-implementation-strategy" class="table-of-contents__link toc-highlight">Component Implementation Strategy</a></li><li><a href="#implementation-roadmap" class="table-of-contents__link toc-highlight">Implementation Roadmap</a></li></ul></li><li><a href="#ux-consistency-patterns" class="table-of-contents__link toc-highlight">UX Consistency Patterns</a><ul><li><a href="#button-hierarchy" class="table-of-contents__link toc-highlight">Button Hierarchy</a></li><li><a href="#feedback-patterns" class="table-of-contents__link toc-highlight">Feedback Patterns</a></li><li><a href="#loading-states" class="table-of-contents__link toc-highlight">Loading States</a></li><li><a href="#empty-states" class="table-of-contents__link toc-highlight">Empty States</a></li><li><a href="#navigation-patterns" class="table-of-contents__link toc-highlight">Navigation Patterns</a></li><li><a href="#interaction-micro-patterns" class="table-of-contents__link toc-highlight">Interaction Micro-patterns</a></li></ul></li><li><a href="#responsive-design--accessibility" class="table-of-contents__link toc-highlight">Responsive Design &amp; Accessibility</a><ul><li><a href="#responsive-strategy" class="table-of-contents__link toc-highlight">Responsive Strategy</a></li><li><a href="#breakpoint-strategy" class="table-of-contents__link toc-highlight">Breakpoint Strategy</a></li><li><a href="#accessibility-strategy" class="table-of-contents__link toc-highlight">Accessibility Strategy</a></li><li><a href="#testing-strategy" class="table-of-contents__link toc-highlight">Testing Strategy</a></li><li><a href="#implementation-guidelines" class="table-of-contents__link toc-highlight">Implementation Guidelines</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/genie-docs/design-documents/planning-artifacts/architecture/">Architecture</a></li><li class="footer__item"><a class="footer__link-item" href="/genie-docs/handbook/">Handbook</a></li></ul></div><div class="col footer__col"><div class="footer__title">Repositories</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/cyberagent-genie/genie-system" target="_blank" rel="noopener noreferrer" class="footer__link-item">genie-system<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/cyberagent-genie/genie-api" target="_blank" rel="noopener noreferrer" class="footer__link-item">genie-api<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/cyberagent-genie/genie-chrome-extension" target="_blank" rel="noopener noreferrer" class="footer__link-item">genie-chrome-extension<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 CyberAgent Genie. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
